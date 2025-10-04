@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="3" lineNum="6" parent="globals/WatchFace1View" pc="268435510" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="4" lineNum="5" parent="globals/WatchFace1App" pc="268435529" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="7" lineNum="13" parent="globals/WatchFace1View" pc="268435548" symbol="onLayout"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="7" lineNum="14" parent="globals/WatchFace1View" pc="268435550" symbol="onLayout"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="9" lineNum="8" parent="globals/WatchFace1View" pc="268435592" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="9" lineNum="9" parent="globals/WatchFace1View" pc="268435594" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="11" lineNum="24" parent="globals/WatchFace1View" pc="268435613" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="11" lineNum="26" parent="globals/WatchFace1View" pc="268435617" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="11" lineNum="27" parent="globals/WatchFace1View" pc="268435634" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="11" lineNum="28" parent="globals/WatchFace1View" pc="268435708" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="11" lineNum="29" parent="globals/WatchFace1View" pc="268435736" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="11" lineNum="32" parent="globals/WatchFace1View" pc="268435750" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="12" lineNum="12" parent="globals/WatchFace1App" pc="268435775" symbol="onStart"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="13" lineNum="20" parent="globals/WatchFace1App" pc="268435778" symbol="getInitialView"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="13" lineNum="21" parent="globals/WatchFace1App" pc="268435780" symbol="getInitialView"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="14" lineNum="7" parent="globals/WatchFace1App" pc="268435817" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="14" lineNum="8" parent="globals/WatchFace1App" pc="268435819" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="15" lineNum="16" parent="globals/WatchFace1App" pc="268435838" symbol="onStop"/>
+<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="16" lineNum="13" parent="globals/Rez/Layouts" pc="268435841" symbol="WatchFace"/>
+<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="16" lineNum="14" parent="globals/Rez/Layouts" pc="268435853" symbol="WatchFace"/>
+<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="16" lineNum="16" parent="globals/Rez/Layouts" pc="268436006" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="10" symbol="AppName"/>
+<entry id="5" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="6" object="true" symbol="WatchFace1App"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="9" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="7" object="true" symbol="WatchFace1View"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="8389347" symbol="color"/>
+<entry id="8" module="true" symbol="Layouts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435591" name="dc" stackId="1" startPc="268435548"/>
+<entry arg="true" endPc="268435774" name="dc" stackId="1" startPc="268435613"/>
+<entry endPc="268435773" name="clockTime" stackId="2" startPc="268435617"/>
+<entry endPc="268435773" name="timeString" stackId="3" startPc="268435617"/>
+<entry endPc="268435773" name="view" stackId="4" startPc="268435617"/>
+<entry arg="true" endPc="268436022" name="dc" stackId="1" startPc="268435841"/>
+<entry endPc="268436022" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268435853"/>
+</localVars>
+<deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3869-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="63" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Rez" offset="134" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/WatchFace1View" offset="189" parentId="globals" symbolId="WatchFace1View" type="class"/>
+<dataEntry label="globals/WatchFace1App" offset="284" parentId="globals" symbolId="WatchFace1App" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="355" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="394" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="433" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435509" name="&lt;init&gt;" parent="Rez" startPc="268435486">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="WatchFace1View" startPc="268435510">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435547" name="&lt;init&gt;" parent="WatchFace1App" startPc="268435529">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="WatchFace1View">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="WatchFace1View">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435591" name="onLayout" parent="WatchFace1View" startPc="268435548">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="WatchFace1View">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435612" name="initialize" parent="WatchFace1View" startPc="268435592">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="WatchFace1View">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435774" name="onUpdate" parent="WatchFace1View" startPc="268435613">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435777" name="onStart" parent="WatchFace1App" startPc="268435775">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435816" name="getInitialView" parent="WatchFace1App" startPc="268435778">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435837" name="initialize" parent="WatchFace1App" startPc="268435817">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435840" name="onStop" parent="WatchFace1App" startPc="268435838">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436022" name="WatchFace" parent="Layouts" startPc="268435841">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
