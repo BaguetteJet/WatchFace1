@@ -23,22 +23,38 @@ class WatchFace1View extends WatchUi.WatchFace {
     }
 
     // Update the view
-    function onUpdate(dc as Dc) as Void {
+    function onUpdate(dc) {
+        var colours = [Graphics.COLOR_BLACK, Graphics.COLOR_RED, Graphics.COLOR_GREEN, Graphics.COLOR_YELLOW, Graphics.COLOR_DK_BLUE, Graphics.COLOR_PINK, Graphics.COLOR_BLUE, Graphics.COLOR_WHITE];
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        dc.clear();
+
+        for (var i = 0; i < 8; i++) {
+            dc.setColor(colours[i], Graphics.COLOR_TRANSPARENT);
+            dc.fillRectangle(dc.getWidth()/2 - 20*(4-i), dc.getWidth()/2 - 50, 20, 20);
+        }
+
+
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 
         // Get and show the current time
         var clockTime = System.getClockTime();
         var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-        var view = View.findDrawableById("TimeLabel") as Text;
-        view.setText(timeString);
 
-        // "Hello World"
-        var helloWorldLabel = View.findDrawableById("HelloWorldLabel") as Text;
-        helloWorldLabel.setText("Hello World");
-        var dateLabel = View.findDrawableById("DateLabel") as Text;
-        dateLabel.setText(getDate());
+        dc.drawText(
+            dc.getWidth()/2,
+            dc.getHeight()/3,
+            Graphics.FONT_NUMBER_MEDIUM,
+            timeString,
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
 
-        // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
+        dc.drawText(
+            dc.getWidth()/2,
+            dc.getHeight()/1.5,
+            Graphics.FONT_MEDIUM,
+            "Hello World",
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
     }
 
     function getDate() as String {
