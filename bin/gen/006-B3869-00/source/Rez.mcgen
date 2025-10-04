@@ -11,35 +11,7 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_var_dc_getHeight = dc.getHeight();
-
-            var rez_cmp_local_var_dc_getWidth = dc.getWidth();
-
-            var rez_cmp_local_text_TimeLabel = new WatchUi.Text({:identifier=>"TimeLabel", :color=>Graphics.COLOR_BLUE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>((rez_cmp_local_var_dc_getHeight - dc.getFontHeight(Graphics.FONT_LARGE)) * 0.5), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
-
-            var rez_cmp_local_text_HelloWorldLabel = new WatchUi.Text({:identifier=>"HelloWorldLabel", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (80 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
-
-            var rez_cmp_local_text_DateLabel = new WatchUi.Text({:identifier=>"DateLabel", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (20 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
-
-            var rez_cmp_local_text_HeartRateLabel = new WatchUi.Text({:identifier=>"HeartRateLabel", :color=>Graphics.COLOR_RED, :locX=>(rez_cmp_local_var_dc_getWidth * (50 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (75 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SYSTEM_XTINY});
-
-            var rez_cmp_local_text_Colour1 = new WatchUi.Text({:identifier=>"Colour1", :color=>Graphics.COLOR_BLACK, :locX=>(rez_cmp_local_var_dc_getWidth * (10 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (60 / 100.0)), :text=>"[][]", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
-
-            var rez_cmp_local_text_Colour2 = new WatchUi.Text({:identifier=>"Colour2", :color=>Graphics.COLOR_RED, :locX=>(rez_cmp_local_var_dc_getWidth * (20 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (60 / 100.0)), :text=>"[][]", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
-
-            var rez_cmp_local_text_Colour3 = new WatchUi.Text({:identifier=>"Colour3", :color=>Graphics.COLOR_GREEN, :locX=>(rez_cmp_local_var_dc_getWidth * (30 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (60 / 100.0)), :text=>"[][]", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
-
-            var rez_cmp_local_text_Colour4 = new WatchUi.Text({:identifier=>"Colour4", :color=>Graphics.COLOR_YELLOW, :locX=>(rez_cmp_local_var_dc_getWidth * (40 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (60 / 100.0)), :text=>"[][]", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
-
-            var rez_cmp_local_text_Colour5 = new WatchUi.Text({:identifier=>"Colour5", :color=>Graphics.COLOR_DK_BLUE, :locX=>(rez_cmp_local_var_dc_getWidth * (50 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (60 / 100.0)), :text=>"[][]", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
-
-            var rez_cmp_local_text_Colour6 = new WatchUi.Text({:identifier=>"Colour6", :color=>Graphics.COLOR_PINK, :locX=>(rez_cmp_local_var_dc_getWidth * (60 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (60 / 100.0)), :text=>"[][]", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
-
-            var rez_cmp_local_text_Colour7 = new WatchUi.Text({:identifier=>"Colour7", :color=>Graphics.COLOR_BLUE, :locX=>(rez_cmp_local_var_dc_getWidth * (70 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (60 / 100.0)), :text=>"[][]", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
-
-            var rez_cmp_local_text_Colour8 = new WatchUi.Text({:identifier=>"Colour8", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * (80 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (60 / 100.0)), :text=>"[][]", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_TINY});
-
-            return [rez_cmp_local_text_TimeLabel, rez_cmp_local_text_HelloWorldLabel, rez_cmp_local_text_DateLabel, rez_cmp_local_text_HeartRateLabel, rez_cmp_local_text_Colour1, rez_cmp_local_text_Colour2, rez_cmp_local_text_Colour3, rez_cmp_local_text_Colour4, rez_cmp_local_text_Colour5, rez_cmp_local_text_Colour6, rez_cmp_local_text_Colour7, rez_cmp_local_text_Colour8] as Array<WatchUi.Drawable>;
+            return [] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

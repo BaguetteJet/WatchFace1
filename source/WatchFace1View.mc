@@ -33,7 +33,6 @@ class WatchFace1View extends WatchUi.WatchFace {
             dc.fillRectangle(dc.getWidth()/2 - 20*(4-i), dc.getWidth()/2 - 50, 20, 20);
         }
 
-
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 
         // Get and show the current time
