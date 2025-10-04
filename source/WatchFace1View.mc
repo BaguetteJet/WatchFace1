@@ -37,7 +37,7 @@ class WatchFace1View extends WatchUi.WatchFace {
 
         // Get and show the current time
         var clockTime = System.getClockTime();
-        var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
+        var timeString = Lang.format("$1$:$2$", [clockTime.hour.format("%02d"), clockTime.min.format("%02d")]);
 
         dc.drawText(
             dc.getWidth()/2,

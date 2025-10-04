@@ -25,16 +25,16 @@
 <entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="12" lineNum="36" parent="globals/WatchFace1View" pc="268436013" symbol="onUpdate"/>
 <entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="12" lineNum="39" parent="globals/WatchFace1View" pc="268436035" symbol="onUpdate"/>
 <entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="12" lineNum="40" parent="globals/WatchFace1View" pc="268436052" symbol="onUpdate"/>
-<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="12" lineNum="42" parent="globals/WatchFace1View" pc="268436126" symbol="onUpdate"/>
-<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="12" lineNum="50" parent="globals/WatchFace1View" pc="268436184" symbol="onUpdate"/>
-<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="13" lineNum="12" parent="globals/WatchFace1App" pc="268436246" symbol="onStart"/>
-<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="14" lineNum="20" parent="globals/WatchFace1App" pc="268436249" symbol="getInitialView"/>
-<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="14" lineNum="21" parent="globals/WatchFace1App" pc="268436251" symbol="getInitialView"/>
-<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="15" lineNum="7" parent="globals/WatchFace1App" pc="268436288" symbol="initialize"/>
-<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="15" lineNum="8" parent="globals/WatchFace1App" pc="268436290" symbol="initialize"/>
-<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="16" lineNum="16" parent="globals/WatchFace1App" pc="268436309" symbol="onStop"/>
-<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="17" lineNum="13" parent="globals/Rez/Layouts" pc="268436312" symbol="WatchFace"/>
-<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="17" lineNum="14" parent="globals/Rez/Layouts" pc="268436322" symbol="WatchFace"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="12" lineNum="42" parent="globals/WatchFace1View" pc="268436140" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1View.mc" id="12" lineNum="50" parent="globals/WatchFace1View" pc="268436198" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="13" lineNum="12" parent="globals/WatchFace1App" pc="268436260" symbol="onStart"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="14" lineNum="20" parent="globals/WatchFace1App" pc="268436263" symbol="getInitialView"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="14" lineNum="21" parent="globals/WatchFace1App" pc="268436265" symbol="getInitialView"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="15" lineNum="7" parent="globals/WatchFace1App" pc="268436302" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="15" lineNum="8" parent="globals/WatchFace1App" pc="268436304" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\source\\WatchFace1App.mc" id="16" lineNum="16" parent="globals/WatchFace1App" pc="268436323" symbol="onStop"/>
+<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="17" lineNum="13" parent="globals/Rez/Layouts" pc="268436326" symbol="WatchFace"/>
+<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\WatchFace1\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="17" lineNum="14" parent="globals/Rez/Layouts" pc="268436336" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -78,12 +78,12 @@
 <entry arg="true" endPc="268435591" name="dc" stackId="1" startPc="268435548"/>
 <entry endPc="268435711" name="now" stackId="1" startPc="268435596"/>
 <entry endPc="268435711" name="dateString" stackId="2" startPc="268435596"/>
-<entry arg="true" endPc="268436245" name="dc" stackId="1" startPc="268435733"/>
-<entry endPc="268436244" name="colours" stackId="2" startPc="268435737"/>
+<entry arg="true" endPc="268436259" name="dc" stackId="1" startPc="268435733"/>
+<entry endPc="268436258" name="colours" stackId="2" startPc="268435737"/>
 <entry endPc="268436012" name="i" stackId="3" startPc="268435901"/>
-<entry endPc="268436244" name="clockTime" stackId="4" startPc="268435737"/>
-<entry endPc="268436244" name="timeString" stackId="5" startPc="268435737"/>
-<entry arg="true" endPc="268436328" name="dc" stackId="1" startPc="268436312"/>
+<entry endPc="268436258" name="clockTime" stackId="4" startPc="268435737"/>
+<entry endPc="268436258" name="timeString" stackId="5" startPc="268435737"/>
+<entry arg="true" endPc="268436342" name="dc" stackId="1" startPc="268436326"/>
 </localVars>
 <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3869-00"/>
 <annotations>
@@ -143,25 +143,25 @@
 <functionEntry accessMode="public" name="onHide" parent="WatchFace1View">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436245" name="onUpdate" parent="WatchFace1View" startPc="268435733">
+<functionEntry accessMode="public" endPc="268436259" name="onUpdate" parent="WatchFace1View" startPc="268435733">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436248" name="onStart" parent="WatchFace1App" startPc="268436246">
+<functionEntry accessMode="public" endPc="268436262" name="onStart" parent="WatchFace1App" startPc="268436260">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436287" name="getInitialView" parent="WatchFace1App" startPc="268436249">
+<functionEntry accessMode="public" endPc="268436301" name="getInitialView" parent="WatchFace1App" startPc="268436263">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436308" name="initialize" parent="WatchFace1App" startPc="268436288">
+<functionEntry accessMode="public" endPc="268436322" name="initialize" parent="WatchFace1App" startPc="268436302">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436311" name="onStop" parent="WatchFace1App" startPc="268436309">
+<functionEntry accessMode="public" endPc="268436325" name="onStop" parent="WatchFace1App" startPc="268436323">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436328" name="WatchFace" parent="Layouts" startPc="268436312">
+<functionEntry accessMode="public" endPc="268436342" name="WatchFace" parent="Layouts" startPc="268436326">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
