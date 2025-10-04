@@ -1,3 +1,16 @@
 <layout id="WatchFace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <label id="TimeLabel" x="center" y="center" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="HelloWorldLabel" x="center" y="80%" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="DateLabel" x="center" y="20%" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="HeartRateLabel" x="50%" y="75%" font="Graphics.FONT_SYSTEM_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_RED" />
+
+    <label id="Colour1" text="[][]" x="10%" y="60%" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLACK" />
+    <label id="Colour2" text="[][]" x="20%" y="60%" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_RED"/>
+    <label id="Colour3" text="[][]" x="30%" y="60%" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_GREEN"/>
+    <label id="Colour4" text="[][]" x="40%" y="60%" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_YELLOW"/>
+    <label id="Colour5" text="[][]" x="50%" y="60%" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_DK_BLUE"/>
+    <label id="Colour6" text="[][]" x="60%" y="60%" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_PINK"/>
+    <label id="Colour7" text="[][]" x="70%" y="60%" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE"/>
+    <label id="Colour8" text="[][]" x="80%" y="60%" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE"/>
+    
 </layout>
