@@ -19,376 +19,804 @@ class WatchFace1View extends WatchUi.WatchFace {
     static
     <init> {
     }
-    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; ]
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 10; @position = 8; @symbol_vardef = [colours,10,8,15]; @symbol_type<0> = [Array,10,19,24]; @symbol_type<1> = [Graphics,10,25,33]; @symbol_type<2> = [ColorValue,10,34,44]; ]
+    var colours as Array<Graphics.ColorValue>;
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 11; @position = 8; @symbol_vardef = [size,11,8,12]; ]
+    var size;
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 12; @position = 8; @symbol_vardef = [center,12,8,14]; ]
+    var center;
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 13; @position = 8; @symbol_vardef = [pix,13,8,11]; ]
+    var pix;
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; ]
     function initialize() as Void {
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_10_26_12_4_start:
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 11 8 ]
-        symbol [ WatchFace %tmp.2 11 8 17 ];
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_15_26_21_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 16 8 ]
+        symbol [ WatchFace %tmp.2 16 8 17 ];
         %tmp.2 = getv ? :WatchFace;
-        symbol [ initialize %tmp.3 11 18 28 ];
+        symbol [ initialize %tmp.3 16 18 28 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_10_26_12_4_stop:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 17 8 ]
+        %tmp.4 = newa 8;
+        symbol [ Graphics %tmp.5 17 19 27 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 17 28 39 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        %tmp.7 = dup %tmp.4;
+        %tmp.8 = aputv %tmp.7 0 %tmp.6;
+        symbol [ Graphics %tmp.9 17 41 49 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.10 17 50 59 ];
+        %tmp.10 = getv %tmp.9 :COLOR_RED;
+        %tmp.11 = dup %tmp.8;
+        %tmp.12 = aputv %tmp.11 1 %tmp.10;
+        symbol [ Graphics %tmp.13 17 61 69 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.14 17 70 81 ];
+        %tmp.14 = getv %tmp.13 :COLOR_GREEN;
+        %tmp.15 = dup %tmp.12;
+        %tmp.16 = aputv %tmp.15 2 %tmp.14;
+        symbol [ Graphics %tmp.17 17 83 91 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.18 17 92 104 ];
+        %tmp.18 = getv %tmp.17 :COLOR_YELLOW;
+        %tmp.19 = dup %tmp.16;
+        %tmp.20 = aputv %tmp.19 3 %tmp.18;
+        symbol [ Graphics %tmp.21 17 106 114 ];
+        %tmp.21 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_BLUE %tmp.22 17 115 128 ];
+        %tmp.22 = getv %tmp.21 :COLOR_DK_BLUE;
+        %tmp.23 = dup %tmp.20;
+        %tmp.24 = aputv %tmp.23 4 %tmp.22;
+        symbol [ Graphics %tmp.25 17 130 138 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ COLOR_PINK %tmp.26 17 139 149 ];
+        %tmp.26 = getv %tmp.25 :COLOR_PINK;
+        %tmp.27 = dup %tmp.24;
+        %tmp.28 = aputv %tmp.27 5 %tmp.26;
+        symbol [ Graphics %tmp.29 17 151 159 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.30 17 160 170 ];
+        %tmp.30 = getv %tmp.29 :COLOR_BLUE;
+        %tmp.31 = dup %tmp.28;
+        %tmp.32 = aputv %tmp.31 6 %tmp.30;
+        symbol [ Graphics %tmp.33 17 172 180 ];
+        %tmp.33 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.34 17 181 192 ];
+        %tmp.34 = getv %tmp.33 :COLOR_WHITE;
+        %tmp.35 = dup %tmp.32;
+        %tmp.36 = aputv %tmp.35 7 %tmp.34;
+        symbol [ colours ? 17 8 15 ];
+        putv self :colours %tmp.36;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 18 8 ]
+        symbol [ System %tmp.37 18 15 21 ];
+        %tmp.37 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.38 18 22 39 ];
+        %tmp.38 = getv function %tmp.37 :getDeviceSettings;
+        %tmp.39 = invoke %tmp.37 %tmp.38();
+        symbol [ screenWidth %tmp.40 18 42 53 ];
+        %tmp.40 = getv %tmp.39 :screenWidth;
+        symbol [ size ? 18 8 12 ];
+        putv self :size %tmp.40;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 19 8 ]
+        symbol [ size %tmp.42 19 17 21 ];
+        %tmp.42 = getv ? :size;
+        %tmp.43 = 0.5;
+        %tmp.44 = mul %tmp.42 %tmp.43;
+        symbol [ center ? 19 8 14 ];
+        putv self :center %tmp.44;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 20 8 ]
+        symbol [ center %tmp.46 20 15 21 ];
+        %tmp.46 = getv ? :center;
+        %tmp.47 = 0.1;
+        %tmp.48 = mul %tmp.46 %tmp.47;
+        symbol [ toNumber %tmp.49 20 27 35 ];
+        %tmp.49 = getv function %tmp.48 :toNumber;
+        %tmp.50 = invoke %tmp.48 %tmp.49();
+        symbol [ pix ? 20 8 11 ];
+        putv self :pix %tmp.50;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_15_26_21_4_stop:
     }
-    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 15; @symbol_functiondef = [onLayout,15,13,21]; @symbol_param<0> = [dc,15,22,24]; @symbol_param<0>_type<0> = [Dc,15,28,30]; ]
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 24; @symbol_functiondef = [onLayout,24,13,21]; @symbol_param<0> = [dc,24,22,24]; @symbol_param<0>_type<0> = [Dc,24,28,30]; ]
     function onLayout(dc as Dc) as Void {
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_15_40_17_4_start:
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 16 8 ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_24_40_26_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 25 8 ]
         %tmp.1 = self;
-        symbol [ setLayout %tmp.2 16 8 17 ];
+        symbol [ setLayout %tmp.2 25 8 17 ];
         %tmp.2 = getv function %tmp.1 :setLayout;
-        symbol [ Rez %tmp.4 16 18 21 ];
+        symbol [ Rez %tmp.4 25 18 21 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Layouts %tmp.5 16 22 29 ];
+        symbol [ Layouts %tmp.5 25 22 29 ];
         %tmp.5 = getv %tmp.4 :Layouts;
-        symbol [ WatchFace %tmp.6 16 30 39 ];
+        symbol [ WatchFace %tmp.6 25 30 39 ];
         %tmp.6 = getv function %tmp.5 :WatchFace;
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 16 40 42 ];
+        symbol [ dc %tmp.7 25 40 42 ];
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         invoke %tmp.1 %tmp.2(%tmp.8);
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_15_40_17_4_stop:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_24_40_26_4_stop:
     }
-    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 22; @symbol_functiondef = [onShow,22,13,19]; ]
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 31; @symbol_functiondef = [onShow,31,13,19]; ]
     function onShow() as Void {
     }
-    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 26; @symbol_functiondef = [onUpdate,26,13,21]; @symbol_param<0> = [dc,26,22,24]; ]
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 35; @symbol_functiondef = [onUpdate,35,13,21]; @symbol_param<0> = [dc,35,22,24]; ]
     function onUpdate(dc) {
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_26_26_57_4_start:
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 27 8 ]
-        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_26_26_57_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_26_26_57_4_stop" ]
-        %colours.1 = local;
-        symbol [ colours %colours.1 27 12 19 ];
-        %tmp.1 = newa 8;
-        symbol [ Graphics %tmp.2 27 23 31 ];
-        %tmp.2 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.3 27 32 43 ];
-        %tmp.3 = getv %tmp.2 :COLOR_BLACK;
-        %tmp.4 = dup %tmp.1;
-        %tmp.5 = aputv %tmp.4 0 %tmp.3;
-        symbol [ Graphics %tmp.6 27 45 53 ];
-        %tmp.6 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.7 27 54 63 ];
-        %tmp.7 = getv %tmp.6 :COLOR_RED;
-        %tmp.8 = dup %tmp.5;
-        %tmp.9 = aputv %tmp.8 1 %tmp.7;
-        symbol [ Graphics %tmp.10 27 65 73 ];
-        %tmp.10 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.11 27 74 85 ];
-        %tmp.11 = getv %tmp.10 :COLOR_GREEN;
-        %tmp.12 = dup %tmp.9;
-        %tmp.13 = aputv %tmp.12 2 %tmp.11;
-        symbol [ Graphics %tmp.14 27 87 95 ];
-        %tmp.14 = getm $.Toybox.Graphics;
-        symbol [ COLOR_YELLOW %tmp.15 27 96 108 ];
-        %tmp.15 = getv %tmp.14 :COLOR_YELLOW;
-        %tmp.16 = dup %tmp.13;
-        %tmp.17 = aputv %tmp.16 3 %tmp.15;
-        symbol [ Graphics %tmp.18 27 110 118 ];
-        %tmp.18 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_BLUE %tmp.19 27 119 132 ];
-        %tmp.19 = getv %tmp.18 :COLOR_DK_BLUE;
-        %tmp.20 = dup %tmp.17;
-        %tmp.21 = aputv %tmp.20 4 %tmp.19;
-        symbol [ Graphics %tmp.22 27 134 142 ];
-        %tmp.22 = getm $.Toybox.Graphics;
-        symbol [ COLOR_PINK %tmp.23 27 143 153 ];
-        %tmp.23 = getv %tmp.22 :COLOR_PINK;
-        %tmp.24 = dup %tmp.21;
-        %tmp.25 = aputv %tmp.24 5 %tmp.23;
-        symbol [ Graphics %tmp.26 27 155 163 ];
-        %tmp.26 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.27 27 164 174 ];
-        %tmp.27 = getv %tmp.26 :COLOR_BLUE;
-        %tmp.28 = dup %tmp.25;
-        %tmp.29 = aputv %tmp.28 6 %tmp.27;
-        symbol [ Graphics %tmp.30 27 176 184 ];
-        %tmp.30 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.31 27 185 196 ];
-        %tmp.31 = getv %tmp.30 :COLOR_WHITE;
-        %tmp.32 = dup %tmp.29;
-        %tmp.33 = aputv %tmp.32 7 %tmp.31;
-        lputv %colours.1 %tmp.33;
-        symbol [ colours %colours.1 27 12 19 ];
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 28 8 ]
-        %tmp.34 = lgetv %dc;
-        symbol [ dc %tmp.34 28 8 10 ];
-        symbol [ setColor %tmp.35 28 11 19 ];
-        %tmp.35 = getv function %tmp.34 :setColor;
-        symbol [ Graphics %tmp.36 28 20 28 ];
-        %tmp.36 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.37 28 29 40 ];
-        %tmp.37 = getv %tmp.36 :COLOR_BLACK;
-        symbol [ Graphics %tmp.38 28 42 50 ];
-        %tmp.38 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.39 28 51 62 ];
-        %tmp.39 = getv %tmp.38 :COLOR_BLACK;
-        invoke %tmp.34 %tmp.35(%tmp.37, %tmp.39);
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 29 8 ]
-        %tmp.40 = lgetv %dc;
-        symbol [ dc %tmp.40 29 8 10 ];
-        symbol [ clear %tmp.41 29 11 16 ];
-        %tmp.41 = getv function %tmp.40 :clear;
-        invoke %tmp.40 %tmp.41();
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 31 8 ]
-        for @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_test @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_incr @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_end;
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_init:
-        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_begin" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_end" ]
-        %i.2 = local;
-        symbol [ i %i.2 31 17 18 ];
-        %tmp.42 = 0;
-        lputv %i.2 %tmp.42;
-        symbol [ i %i.2 31 17 18 ];
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_test:
-        %tmp.43 = lgetv %i.2;
-        symbol [ i %tmp.43 31 24 25 ];
-        %tmp.44 = 8;
-        %tmp.45 = lt %tmp.43 %tmp.44;
-        bf %tmp.45 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_end;
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_begin:
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_36_34_8_start:
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 32 12 ]
-        %tmp.46 = lgetv %dc;
-        symbol [ dc %tmp.46 32 12 14 ];
-        symbol [ setColor %tmp.47 32 15 23 ];
-        %tmp.47 = getv function %tmp.46 :setColor;
-        %tmp.48 = lgetv %colours.1;
-        symbol [ colours %tmp.48 32 24 31 ];
-        %tmp.49 = lgetv %i.2;
-        symbol [ i %tmp.49 32 32 33 ];
-        %tmp.50 = agetv %tmp.48 %tmp.49;
-        symbol [ Graphics %tmp.51 32 36 44 ];
-        %tmp.51 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.52 32 45 62 ];
-        %tmp.52 = getv %tmp.51 :COLOR_TRANSPARENT;
-        invoke %tmp.46 %tmp.47(%tmp.50, %tmp.52);
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 33 12 ]
-        %tmp.53 = lgetv %dc;
-        symbol [ dc %tmp.53 33 12 14 ];
-        symbol [ fillRectangle %tmp.54 33 15 28 ];
-        %tmp.54 = getv function %tmp.53 :fillRectangle;
-        %tmp.55 = lgetv %dc;
-        symbol [ dc %tmp.55 33 29 31 ];
-        symbol [ getWidth %tmp.56 33 32 40 ];
-        %tmp.56 = getv function %tmp.55 :getWidth;
-        %tmp.57 = invoke %tmp.55 %tmp.56();
-        %tmp.58 = 2;
-        %tmp.59 = div %tmp.57 %tmp.58;
-        %tmp.60 = 20;
-        %tmp.61 = 4;
-        %tmp.62 = lgetv %i.2;
-        symbol [ i %tmp.62 33 53 54 ];
-        %tmp.63 = sub %tmp.61 %tmp.62;
-        %tmp.64 = mul %tmp.60 %tmp.63;
-        %tmp.65 = sub %tmp.59 %tmp.64;
-        %tmp.66 = lgetv %dc;
-        symbol [ dc %tmp.66 33 57 59 ];
-        symbol [ getWidth %tmp.67 33 60 68 ];
-        %tmp.67 = getv function %tmp.66 :getWidth;
-        %tmp.68 = invoke %tmp.66 %tmp.67();
-        %tmp.69 = 2;
-        %tmp.70 = div %tmp.68 %tmp.69;
-        %tmp.71 = 50;
-        %tmp.72 = sub %tmp.70 %tmp.71;
-        %tmp.73 = 20;
-        %tmp.74 = 20;
-        invoke %tmp.53 %tmp.54(%tmp.65, %tmp.72, %tmp.73, %tmp.74);
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_36_34_8_stop:
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_incr:
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 31 ]
-        %tmp.77 = lgetv %i.2;
-        symbol [ i %tmp.77 31 31 32 ];
-        %tmp.78 = add %tmp.77 1;
-        lputv %i.2 %tmp.78;
-        symbol [ i %i.2 31 31 32 ];
-        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_test;
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_31_8_34_8_for_end:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_35_26_116_4_start:
 [ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 36 8 ]
-        %tmp.79 = lgetv %dc;
-        symbol [ dc %tmp.79 36 8 10 ];
-        symbol [ setColor %tmp.80 36 11 19 ];
-        %tmp.80 = getv function %tmp.79 :setColor;
-        symbol [ Graphics %tmp.81 36 20 28 ];
-        %tmp.81 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.82 36 29 40 ];
-        %tmp.82 = getv %tmp.81 :COLOR_WHITE;
-        symbol [ Graphics %tmp.83 36 42 50 ];
-        %tmp.83 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.84 36 51 68 ];
-        %tmp.84 = getv %tmp.83 :COLOR_TRANSPARENT;
-        invoke %tmp.79 %tmp.80(%tmp.82, %tmp.84);
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 39 8 ]
-        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_26_26_57_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_26_26_57_4_stop" ]
-        %clockTime.3 = local;
-        symbol [ clockTime %clockTime.3 39 12 21 ];
-        symbol [ System %tmp.85 39 24 30 ];
-        %tmp.85 = getm $.Toybox.System;
-        symbol [ getClockTime %tmp.86 39 31 43 ];
-        %tmp.86 = getv function %tmp.85 :getClockTime;
-        %tmp.87 = invoke %tmp.85 %tmp.86();
-        lputv %clockTime.3 %tmp.87;
-        symbol [ clockTime %clockTime.3 39 12 21 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 36 8 10 ];
+        symbol [ setColor %tmp.2 36 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 36 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 36 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 36 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 36 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 37 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 37 8 10 ];
+        symbol [ clear %tmp.8 37 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
 [ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 40 8 ]
-        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_26_26_57_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_26_26_57_4_stop" ]
-        %timeString.4 = local;
-        symbol [ timeString %timeString.4 40 12 22 ];
-        symbol [ Lang %tmp.88 40 25 29 ];
-        %tmp.88 = getm $.Toybox.Lang;
-        symbol [ format %tmp.89 40 30 36 ];
-        %tmp.89 = getv function %tmp.88 :format;
-        %tmp.90 = "$1$:$2$";
-        %tmp.91 = newa 2;
-        %tmp.92 = lgetv %clockTime.3;
-        symbol [ clockTime %tmp.92 40 49 58 ];
-        symbol [ hour %tmp.93 40 59 63 ];
-        %tmp.93 = getv %tmp.92 :hour;
-        symbol [ format %tmp.94 40 64 70 ];
-        %tmp.94 = getv function %tmp.93 :format;
-        %tmp.95 = "%02d";
-        %tmp.96 = invoke %tmp.93 %tmp.94(%tmp.95);
-        %tmp.97 = dup %tmp.91;
-        %tmp.98 = aputv %tmp.97 0 %tmp.96;
-        %tmp.99 = lgetv %clockTime.3;
-        symbol [ clockTime %tmp.99 40 80 89 ];
-        symbol [ min %tmp.100 40 90 93 ];
-        %tmp.100 = getv %tmp.99 :min;
-        symbol [ format %tmp.101 40 94 100 ];
-        %tmp.101 = getv function %tmp.100 :format;
-        %tmp.102 = "%02d";
-        %tmp.103 = invoke %tmp.100 %tmp.101(%tmp.102);
-        %tmp.104 = dup %tmp.98;
-        %tmp.105 = aputv %tmp.104 1 %tmp.103;
-        %tmp.106 = invoke %tmp.88 %tmp.89(%tmp.90, %tmp.105);
-        lputv %timeString.4 %tmp.106;
-        symbol [ timeString %timeString.4 40 12 22 ];
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 42 8 ]
+        for @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_test @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_incr @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_init:
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_begin" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 40 17 18 ];
+        %tmp.9 = 0;
+        lputv %i.1 %tmp.9;
+        symbol [ i %i.1 40 17 18 ];
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_test:
+        %tmp.10 = lgetv %i.1;
+        symbol [ i %tmp.10 40 24 25 ];
+        %tmp.11 = 8;
+        %tmp.12 = lt %tmp.10 %tmp.11;
+        bf %tmp.12 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_begin:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_36_43_8_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 41 12 ]
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 41 12 14 ];
+        symbol [ setColor %tmp.14 41 15 23 ];
+        %tmp.14 = getv function %tmp.13 :setColor;
+        symbol [ colours %tmp.16 41 24 31 ];
+        %tmp.16 = getv ? :colours;
+        %tmp.17 = lgetv %i.1;
+        symbol [ i %tmp.17 41 32 33 ];
+        %tmp.18 = agetv %tmp.16 %tmp.17;
+        symbol [ Graphics %tmp.19 41 36 44 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.20 41 45 62 ];
+        %tmp.20 = getv %tmp.19 :COLOR_TRANSPARENT;
+        invoke %tmp.13 %tmp.14(%tmp.18, %tmp.20);
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_36_43_8_stop:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_incr:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 40 ]
+        %tmp.23 = lgetv %i.1;
+        symbol [ i %tmp.23 40 31 32 ];
+        %tmp.24 = add %tmp.23 1;
+        lputv %i.1 %tmp.24;
+        symbol [ i %i.1 40 31 32 ];
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_test;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_40_8_43_8_for_end:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 46 8 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 46 8 10 ];
+        symbol [ setColor %tmp.26 46 11 19 ];
+        %tmp.26 = getv function %tmp.25 :setColor;
+        symbol [ Graphics %tmp.27 46 20 28 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.28 46 29 38 ];
+        %tmp.28 = getv %tmp.27 :COLOR_RED;
+        symbol [ Graphics %tmp.29 46 40 48 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.30 46 49 66 ];
+        %tmp.30 = getv %tmp.29 :COLOR_TRANSPARENT;
+        invoke %tmp.25 %tmp.26(%tmp.28, %tmp.30);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 47 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_35_26_116_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_35_26_116_4_stop" ]
+        %hRed.2 = local;
+        symbol [ hRed %hRed.2 47 12 16 ];
+        symbol [ pix %tmp.32 47 19 22 ];
+        %tmp.32 = getv ? :pix;
+        %tmp.33 = 2;
+        %tmp.34 = mul %tmp.32 %tmp.33;
+        symbol [ ActivityMonitor %tmp.36 47 26 41 ];
+        %tmp.36 = getv ? :ActivityMonitor;
+        symbol [ getHeartRateHistory %tmp.37 47 42 61 ];
+        %tmp.37 = getv function %tmp.36 :getHeartRateHistory;
+        %tmp.38 = 1;
+        %tmp.39 = true;
+        %tmp.40 = invoke %tmp.36 %tmp.37(%tmp.38, %tmp.39);
+        symbol [ next %tmp.41 47 71 75 ];
+        %tmp.41 = getv function %tmp.40 :next;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        symbol [ heartRate %tmp.43 47 78 87 ];
+        %tmp.43 = getv %tmp.42 :heartRate;
+        %tmp.44 = mul %tmp.34 %tmp.43;
+        symbol [ UserProfile %tmp.46 47 89 100 ];
+        %tmp.46 = getv ? :UserProfile;
+        symbol [ getProfile %tmp.47 47 101 111 ];
+        %tmp.47 = getv function %tmp.46 :getProfile;
+        %tmp.48 = invoke %tmp.46 %tmp.47();
+        symbol [ averageRestingHeartRate %tmp.49 47 114 137 ];
+        %tmp.49 = getv %tmp.48 :averageRestingHeartRate;
+        %tmp.50 = div %tmp.44 %tmp.49;
+        lputv %hRed.2 %tmp.50;
+        symbol [ hRed %hRed.2 47 12 16 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 48 8 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 48 8 10 ];
+        symbol [ fillRectangle %tmp.52 48 11 24 ];
+        %tmp.52 = getv function %tmp.51 :fillRectangle;
+        %tmp.53 = lgetv %dc;
+        symbol [ dc %tmp.53 48 25 27 ];
+        symbol [ getWidth %tmp.54 48 28 36 ];
+        %tmp.54 = getv function %tmp.53 :getWidth;
+        %tmp.55 = invoke %tmp.53 %tmp.54();
+        %tmp.56 = 2;
+        %tmp.57 = div %tmp.55 %tmp.56;
+        symbol [ pix %tmp.59 48 43 46 ];
+        %tmp.59 = getv ? :pix;
+        %tmp.60 = 8;
+        %tmp.61 = mul %tmp.59 %tmp.60;
+        %tmp.62 = sub %tmp.57 %tmp.61;
+        %tmp.63 = lgetv %dc;
+        symbol [ dc %tmp.63 48 50 52 ];
+        symbol [ getHeight %tmp.64 48 53 62 ];
+        %tmp.64 = getv function %tmp.63 :getHeight;
+        %tmp.65 = invoke %tmp.63 %tmp.64();
+        %tmp.66 = 2;
+        %tmp.67 = div %tmp.65 %tmp.66;
+        symbol [ pix %tmp.69 48 69 72 ];
+        %tmp.69 = getv ? :pix;
+        %tmp.70 = 3;
+        %tmp.71 = mul %tmp.69 %tmp.70;
+        %tmp.72 = sub %tmp.67 %tmp.71;
+        %tmp.73 = lgetv %hRed.2;
+        symbol [ hRed %tmp.73 48 77 81 ];
+        %tmp.74 = sub %tmp.72 %tmp.73;
+        symbol [ pix %tmp.76 48 83 86 ];
+        %tmp.76 = getv ? :pix;
+        %tmp.77 = 2;
+        %tmp.78 = mul %tmp.76 %tmp.77;
+        %tmp.79 = lgetv %hRed.2;
+        symbol [ hRed %tmp.79 48 90 94 ];
+        invoke %tmp.51 %tmp.52(%tmp.62, %tmp.74, %tmp.78, %tmp.79);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 51 8 ]
+        %tmp.80 = lgetv %dc;
+        symbol [ dc %tmp.80 51 8 10 ];
+        symbol [ setColor %tmp.81 51 11 19 ];
+        %tmp.81 = getv function %tmp.80 :setColor;
+        symbol [ Graphics %tmp.82 51 20 28 ];
+        %tmp.82 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.83 51 29 40 ];
+        %tmp.83 = getv %tmp.82 :COLOR_WHITE;
+        symbol [ Graphics %tmp.84 51 42 50 ];
+        %tmp.84 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.85 51 51 68 ];
+        %tmp.85 = getv %tmp.84 :COLOR_TRANSPARENT;
+        invoke %tmp.80 %tmp.81(%tmp.83, %tmp.85);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 54 8 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 54 8 10 ];
+        symbol [ drawText %tmp.87 54 11 19 ];
+        %tmp.87 = getv function %tmp.86 :drawText;
+        %tmp.88 = lgetv %dc;
+        symbol [ dc %tmp.88 55 12 14 ];
+        symbol [ getWidth %tmp.89 55 15 23 ];
+        %tmp.89 = getv function %tmp.88 :getWidth;
+        %tmp.90 = invoke %tmp.88 %tmp.89();
+        %tmp.91 = 2;
+        %tmp.92 = div %tmp.90 %tmp.91;
+        %tmp.93 = lgetv %dc;
+        symbol [ dc %tmp.93 56 12 14 ];
+        symbol [ getHeight %tmp.94 56 15 24 ];
+        %tmp.94 = getv function %tmp.93 :getHeight;
+        %tmp.95 = invoke %tmp.93 %tmp.94();
+        %tmp.96 = 3;
+        %tmp.97 = div %tmp.95 %tmp.96;
+        symbol [ Graphics %tmp.98 57 12 20 ];
+        %tmp.98 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MEDIUM %tmp.99 57 21 39 ];
+        %tmp.99 = getv %tmp.98 :FONT_NUMBER_MEDIUM;
+        %tmp.100 = self;
+        symbol [ getTime %tmp.101 58 12 19 ];
+        %tmp.101 = getv function %tmp.100 :getTime;
+        %tmp.102 = invoke %tmp.100 %tmp.101();
+        symbol [ Graphics %tmp.103 59 12 20 ];
+        %tmp.103 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.104 59 21 40 ];
+        %tmp.104 = getv %tmp.103 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.86 %tmp.87(%tmp.92, %tmp.97, %tmp.99, %tmp.102, %tmp.104);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 62 8 ]
+        %tmp.105 = lgetv %dc;
+        symbol [ dc %tmp.105 62 8 10 ];
+        symbol [ drawText %tmp.106 62 11 19 ];
+        %tmp.106 = getv function %tmp.105 :drawText;
         %tmp.107 = lgetv %dc;
-        symbol [ dc %tmp.107 42 8 10 ];
-        symbol [ drawText %tmp.108 42 11 19 ];
-        %tmp.108 = getv function %tmp.107 :drawText;
-        %tmp.109 = lgetv %dc;
-        symbol [ dc %tmp.109 43 12 14 ];
-        symbol [ getWidth %tmp.110 43 15 23 ];
-        %tmp.110 = getv function %tmp.109 :getWidth;
-        %tmp.111 = invoke %tmp.109 %tmp.110();
-        %tmp.112 = 2;
-        %tmp.113 = div %tmp.111 %tmp.112;
-        %tmp.114 = lgetv %dc;
-        symbol [ dc %tmp.114 44 12 14 ];
-        symbol [ getHeight %tmp.115 44 15 24 ];
-        %tmp.115 = getv function %tmp.114 :getHeight;
-        %tmp.116 = invoke %tmp.114 %tmp.115();
-        %tmp.117 = 3;
-        %tmp.118 = div %tmp.116 %tmp.117;
-        symbol [ Graphics %tmp.119 45 12 20 ];
-        %tmp.119 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MEDIUM %tmp.120 45 21 39 ];
-        %tmp.120 = getv %tmp.119 :FONT_NUMBER_MEDIUM;
-        %tmp.121 = lgetv %timeString.4;
-        symbol [ timeString %tmp.121 46 12 22 ];
-        symbol [ Graphics %tmp.122 47 12 20 ];
+        symbol [ dc %tmp.107 63 12 14 ];
+        symbol [ getWidth %tmp.108 63 15 23 ];
+        %tmp.108 = getv function %tmp.107 :getWidth;
+        %tmp.109 = invoke %tmp.107 %tmp.108();
+        %tmp.110 = 2;
+        %tmp.111 = div %tmp.109 %tmp.110;
+        %tmp.112 = lgetv %dc;
+        symbol [ dc %tmp.112 64 12 14 ];
+        symbol [ getHeight %tmp.113 64 15 24 ];
+        %tmp.113 = getv function %tmp.112 :getHeight;
+        %tmp.114 = invoke %tmp.112 %tmp.113();
+        %tmp.115 = 1.5;
+        %tmp.116 = div %tmp.114 %tmp.115;
+        symbol [ Graphics %tmp.117 65 12 20 ];
+        %tmp.117 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.118 65 21 32 ];
+        %tmp.118 = getv %tmp.117 :FONT_MEDIUM;
+        %tmp.119 = self;
+        symbol [ getDate %tmp.120 66 12 19 ];
+        %tmp.120 = getv function %tmp.119 :getDate;
+        %tmp.121 = invoke %tmp.119 %tmp.120();
+        symbol [ Graphics %tmp.122 67 12 20 ];
         %tmp.122 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.123 47 21 40 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.123 67 21 40 ];
         %tmp.123 = getv %tmp.122 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.107 %tmp.108(%tmp.113, %tmp.118, %tmp.120, %tmp.121, %tmp.123);
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 50 8 ]
+        invoke %tmp.105 %tmp.106(%tmp.111, %tmp.116, %tmp.118, %tmp.121, %tmp.123);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 70 8 ]
         %tmp.124 = lgetv %dc;
-        symbol [ dc %tmp.124 50 8 10 ];
-        symbol [ drawText %tmp.125 50 11 19 ];
+        symbol [ dc %tmp.124 70 8 10 ];
+        symbol [ drawText %tmp.125 70 11 19 ];
         %tmp.125 = getv function %tmp.124 :drawText;
         %tmp.126 = lgetv %dc;
-        symbol [ dc %tmp.126 51 12 14 ];
-        symbol [ getWidth %tmp.127 51 15 23 ];
+        symbol [ dc %tmp.126 71 12 14 ];
+        symbol [ getWidth %tmp.127 71 15 23 ];
         %tmp.127 = getv function %tmp.126 :getWidth;
         %tmp.128 = invoke %tmp.126 %tmp.127();
         %tmp.129 = 2;
         %tmp.130 = div %tmp.128 %tmp.129;
-        %tmp.131 = lgetv %dc;
-        symbol [ dc %tmp.131 52 12 14 ];
-        symbol [ getHeight %tmp.132 52 15 24 ];
-        %tmp.132 = getv function %tmp.131 :getHeight;
-        %tmp.133 = invoke %tmp.131 %tmp.132();
-        %tmp.134 = 1.5;
-        %tmp.135 = div %tmp.133 %tmp.134;
-        symbol [ Graphics %tmp.136 53 12 20 ];
-        %tmp.136 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.137 53 21 32 ];
-        %tmp.137 = getv %tmp.136 :FONT_MEDIUM;
-        %tmp.138 = "Hello World";
-        symbol [ Graphics %tmp.139 55 12 20 ];
-        %tmp.139 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.140 55 21 40 ];
-        %tmp.140 = getv %tmp.139 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.124 %tmp.125(%tmp.130, %tmp.135, %tmp.137, %tmp.138, %tmp.140);
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_26_26_57_4_stop:
+        %tmp.131 = 40;
+        %tmp.132 = add %tmp.130 %tmp.131;
+        %tmp.133 = lgetv %dc;
+        symbol [ dc %tmp.133 72 12 14 ];
+        symbol [ getHeight %tmp.134 72 15 24 ];
+        %tmp.134 = getv function %tmp.133 :getHeight;
+        %tmp.135 = invoke %tmp.133 %tmp.134();
+        %tmp.136 = 2;
+        %tmp.137 = div %tmp.135 %tmp.136;
+        %tmp.138 = 53;
+        %tmp.139 = sub %tmp.137 %tmp.138;
+        symbol [ Graphics %tmp.140 73 12 20 ];
+        %tmp.140 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.141 73 21 30 ];
+        %tmp.141 = getv %tmp.140 :FONT_TINY;
+        %tmp.142 = self;
+        symbol [ getBattery %tmp.143 74 12 22 ];
+        %tmp.143 = getv function %tmp.142 :getBattery;
+        %tmp.144 = invoke %tmp.142 %tmp.143();
+        symbol [ Graphics %tmp.145 75 12 20 ];
+        %tmp.145 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.146 75 21 38 ];
+        %tmp.146 = getv %tmp.145 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.124 %tmp.125(%tmp.132, %tmp.139, %tmp.141, %tmp.144, %tmp.146);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 78 8 ]
+        %tmp.147 = lgetv %dc;
+        symbol [ dc %tmp.147 78 8 10 ];
+        symbol [ setColor %tmp.148 78 11 19 ];
+        %tmp.148 = getv function %tmp.147 :setColor;
+        symbol [ Graphics %tmp.149 78 20 28 ];
+        %tmp.149 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.150 78 29 38 ];
+        %tmp.150 = getv %tmp.149 :COLOR_RED;
+        symbol [ Graphics %tmp.151 78 40 48 ];
+        %tmp.151 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.152 78 49 66 ];
+        %tmp.152 = getv %tmp.151 :COLOR_TRANSPARENT;
+        invoke %tmp.147 %tmp.148(%tmp.150, %tmp.152);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 79 8 ]
+        %tmp.153 = lgetv %dc;
+        symbol [ dc %tmp.153 79 8 10 ];
+        symbol [ drawText %tmp.154 79 11 19 ];
+        %tmp.154 = getv function %tmp.153 :drawText;
+        %tmp.155 = lgetv %dc;
+        symbol [ dc %tmp.155 80 12 14 ];
+        symbol [ getWidth %tmp.156 80 15 23 ];
+        %tmp.156 = getv function %tmp.155 :getWidth;
+        %tmp.157 = invoke %tmp.155 %tmp.156();
+        %tmp.158 = 2;
+        %tmp.159 = div %tmp.157 %tmp.158;
+        symbol [ pix %tmp.161 80 30 33 ];
+        %tmp.161 = getv ? :pix;
+        %tmp.162 = 4.1;
+        %tmp.163 = mul %tmp.161 %tmp.162;
+        %tmp.164 = sub %tmp.159 %tmp.163;
+        %tmp.165 = lgetv %dc;
+        symbol [ dc %tmp.165 81 12 14 ];
+        symbol [ getHeight %tmp.166 81 15 24 ];
+        %tmp.166 = getv function %tmp.165 :getHeight;
+        %tmp.167 = invoke %tmp.165 %tmp.166();
+        %tmp.168 = 2;
+        %tmp.169 = div %tmp.167 %tmp.168;
+        symbol [ pix %tmp.171 81 31 34 ];
+        %tmp.171 = getv ? :pix;
+        %tmp.172 = 7;
+        %tmp.173 = mul %tmp.171 %tmp.172;
+        %tmp.174 = sub %tmp.169 %tmp.173;
+        symbol [ Graphics %tmp.175 82 12 20 ];
+        %tmp.175 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.176 82 21 31 ];
+        %tmp.176 = getv %tmp.175 :FONT_XTINY;
+        %tmp.177 = self;
+        symbol [ getHeartRate %tmp.178 83 12 24 ];
+        %tmp.178 = getv function %tmp.177 :getHeartRate;
+        %tmp.179 = invoke %tmp.177 %tmp.178();
+        symbol [ Graphics %tmp.180 84 12 20 ];
+        %tmp.180 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.181 84 21 39 ];
+        %tmp.181 = getv %tmp.180 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.153 %tmp.154(%tmp.164, %tmp.174, %tmp.176, %tmp.179, %tmp.181);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 87 8 ]
+        %tmp.182 = lgetv %dc;
+        symbol [ dc %tmp.182 87 8 10 ];
+        symbol [ setColor %tmp.183 87 11 19 ];
+        %tmp.183 = getv function %tmp.182 :setColor;
+        symbol [ Graphics %tmp.184 87 20 28 ];
+        %tmp.184 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.185 87 29 40 ];
+        %tmp.185 = getv %tmp.184 :COLOR_GREEN;
+        symbol [ Graphics %tmp.186 87 42 50 ];
+        %tmp.186 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.187 87 51 68 ];
+        %tmp.187 = getv %tmp.186 :COLOR_TRANSPARENT;
+        invoke %tmp.182 %tmp.183(%tmp.185, %tmp.187);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 88 8 ]
+        %tmp.188 = lgetv %dc;
+        symbol [ dc %tmp.188 88 8 10 ];
+        symbol [ drawText %tmp.189 88 11 19 ];
+        %tmp.189 = getv function %tmp.188 :drawText;
+        %tmp.190 = lgetv %dc;
+        symbol [ dc %tmp.190 89 12 14 ];
+        symbol [ getWidth %tmp.191 89 15 23 ];
+        %tmp.191 = getv function %tmp.190 :getWidth;
+        %tmp.192 = invoke %tmp.190 %tmp.191();
+        %tmp.193 = 2;
+        %tmp.194 = div %tmp.192 %tmp.193;
+        symbol [ pix %tmp.196 89 30 33 ];
+        %tmp.196 = getv ? :pix;
+        %tmp.197 = 1.9;
+        %tmp.198 = mul %tmp.196 %tmp.197;
+        %tmp.199 = add %tmp.194 %tmp.198;
+        %tmp.200 = lgetv %dc;
+        symbol [ dc %tmp.200 90 12 14 ];
+        symbol [ getHeight %tmp.201 90 15 24 ];
+        %tmp.201 = getv function %tmp.200 :getHeight;
+        %tmp.202 = invoke %tmp.200 %tmp.201();
+        %tmp.203 = 2;
+        %tmp.204 = div %tmp.202 %tmp.203;
+        symbol [ pix %tmp.206 90 31 34 ];
+        %tmp.206 = getv ? :pix;
+        %tmp.207 = 7;
+        %tmp.208 = mul %tmp.206 %tmp.207;
+        %tmp.209 = sub %tmp.204 %tmp.208;
+        symbol [ Graphics %tmp.210 91 12 20 ];
+        %tmp.210 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.211 91 21 31 ];
+        %tmp.211 = getv %tmp.210 :FONT_XTINY;
+        %tmp.212 = self;
+        symbol [ getSteps %tmp.213 92 12 20 ];
+        %tmp.213 = getv function %tmp.212 :getSteps;
+        %tmp.214 = invoke %tmp.212 %tmp.213();
+        symbol [ Graphics %tmp.215 93 12 20 ];
+        %tmp.215 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.216 93 21 39 ];
+        %tmp.216 = getv %tmp.215 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.188 %tmp.189(%tmp.199, %tmp.209, %tmp.211, %tmp.214, %tmp.216);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 96 8 ]
+        %tmp.217 = lgetv %dc;
+        symbol [ dc %tmp.217 96 8 10 ];
+        symbol [ setColor %tmp.218 96 11 19 ];
+        %tmp.218 = getv function %tmp.217 :setColor;
+        symbol [ Graphics %tmp.219 96 20 28 ];
+        %tmp.219 = getm $.Toybox.Graphics;
+        symbol [ COLOR_PINK %tmp.220 96 29 39 ];
+        %tmp.220 = getv %tmp.219 :COLOR_PINK;
+        symbol [ Graphics %tmp.221 96 41 49 ];
+        %tmp.221 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.222 96 50 67 ];
+        %tmp.222 = getv %tmp.221 :COLOR_TRANSPARENT;
+        invoke %tmp.217 %tmp.218(%tmp.220, %tmp.222);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 97 8 ]
+        %tmp.223 = lgetv %dc;
+        symbol [ dc %tmp.223 97 8 10 ];
+        symbol [ drawText %tmp.224 97 11 19 ];
+        %tmp.224 = getv function %tmp.223 :drawText;
+        %tmp.225 = lgetv %dc;
+        symbol [ dc %tmp.225 98 12 14 ];
+        symbol [ getWidth %tmp.226 98 15 23 ];
+        %tmp.226 = getv function %tmp.225 :getWidth;
+        %tmp.227 = invoke %tmp.225 %tmp.226();
+        %tmp.228 = 2;
+        %tmp.229 = div %tmp.227 %tmp.228;
+        symbol [ pix %tmp.231 98 30 33 ];
+        %tmp.231 = getv ? :pix;
+        %tmp.232 = 3.9;
+        %tmp.233 = mul %tmp.231 %tmp.232;
+        %tmp.234 = add %tmp.229 %tmp.233;
+        %tmp.235 = lgetv %dc;
+        symbol [ dc %tmp.235 99 12 14 ];
+        symbol [ getHeight %tmp.236 99 15 24 ];
+        %tmp.236 = getv function %tmp.235 :getHeight;
+        %tmp.237 = invoke %tmp.235 %tmp.236();
+        %tmp.238 = 2;
+        %tmp.239 = div %tmp.237 %tmp.238;
+        symbol [ pix %tmp.241 99 31 34 ];
+        %tmp.241 = getv ? :pix;
+        %tmp.242 = 7;
+        %tmp.243 = mul %tmp.241 %tmp.242;
+        %tmp.244 = sub %tmp.239 %tmp.243;
+        symbol [ Graphics %tmp.245 100 12 20 ];
+        %tmp.245 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.246 100 21 31 ];
+        %tmp.246 = getv %tmp.245 :FONT_XTINY;
+        %tmp.247 = self;
+        symbol [ getBattery %tmp.248 101 12 22 ];
+        %tmp.248 = getv function %tmp.247 :getBattery;
+        %tmp.249 = invoke %tmp.247 %tmp.248();
+        symbol [ Graphics %tmp.250 102 12 20 ];
+        %tmp.250 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.251 102 21 39 ];
+        %tmp.251 = getv %tmp.250 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.223 %tmp.224(%tmp.234, %tmp.244, %tmp.246, %tmp.249, %tmp.251);
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_35_26_116_4_stop:
     }
-    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 59; @symbol_functiondef = [getDate,59,13,20]; @symbol_return<0> = [String,59,26,32]; ]
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 118; @symbol_functiondef = [getTime,118,13,20]; @symbol_return<0> = [String,118,26,32]; ]
+    function getTime() as String {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_118_33_122_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 119 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_118_33_122_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_118_33_122_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 119 12 21 ];
+        symbol [ System %tmp.1 119 24 30 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 119 31 43 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+        symbol [ clockTime %clockTime.1 119 12 21 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 120 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_118_33_122_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_118_33_122_4_stop" ]
+        %timeString.2 = local;
+        symbol [ timeString %timeString.2 120 12 22 ];
+        symbol [ Lang %tmp.4 120 25 29 ];
+        %tmp.4 = getm $.Toybox.Lang;
+        symbol [ format %tmp.5 120 30 36 ];
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "$1$:$2$";
+        %tmp.7 = newa 2;
+        %tmp.8 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.8 120 49 58 ];
+        symbol [ hour %tmp.9 120 59 63 ];
+        %tmp.9 = getv %tmp.8 :hour;
+        symbol [ format %tmp.10 120 64 70 ];
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "%02d";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        %tmp.13 = dup %tmp.7;
+        %tmp.14 = aputv %tmp.13 0 %tmp.12;
+        %tmp.15 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.15 120 80 89 ];
+        symbol [ min %tmp.16 120 90 93 ];
+        %tmp.16 = getv %tmp.15 :min;
+        symbol [ format %tmp.17 120 94 100 ];
+        %tmp.17 = getv function %tmp.16 :format;
+        %tmp.18 = "%02d";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        %tmp.20 = dup %tmp.14;
+        %tmp.21 = aputv %tmp.20 1 %tmp.19;
+        %tmp.22 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.21);
+        lputv %timeString.2 %tmp.22;
+        symbol [ timeString %timeString.2 120 12 22 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 121 8 ]
+        %tmp.23 = lgetv %timeString.2;
+        symbol [ timeString %tmp.23 121 15 25 ];
+        ret %tmp.23;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_118_33_122_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 124; @symbol_functiondef = [getDate,124,13,20]; @symbol_return<0> = [String,124,26,32]; ]
     function getDate() as String {
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_59_33_63_4_start:
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 60 8 ]
-        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_59_33_63_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_59_33_63_4_stop" ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_124_33_128_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 125 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_124_33_128_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_124_33_128_4_stop" ]
         %now.1 = local;
-        symbol [ now %now.1 60 12 15 ];
-        symbol [ Gregorian %tmp.1 60 18 27 ];
+        symbol [ now %now.1 125 12 15 ];
+        symbol [ Gregorian %tmp.1 125 18 27 ];
         %tmp.1 = getm $.Toybox.Time.Gregorian;
-        symbol [ info %tmp.2 60 28 32 ];
+        symbol [ info %tmp.2 125 28 32 ];
         %tmp.2 = getv function %tmp.1 :info;
-        symbol [ Time %tmp.3 60 33 37 ];
+        symbol [ Time %tmp.3 125 33 37 ];
         %tmp.3 = getm $.Toybox.Time;
-        symbol [ now %tmp.4 60 38 41 ];
+        symbol [ now %tmp.4 125 38 41 ];
         %tmp.4 = getv function %tmp.3 :now;
         %tmp.5 = invoke %tmp.3 %tmp.4();
-        symbol [ Time %tmp.6 60 45 49 ];
+        symbol [ Time %tmp.6 125 45 49 ];
         %tmp.6 = getm $.Toybox.Time;
-        symbol [ FORMAT_MEDIUM %tmp.7 60 50 63 ];
+        symbol [ FORMAT_MEDIUM %tmp.7 125 50 63 ];
         %tmp.7 = getv %tmp.6 :FORMAT_MEDIUM;
         %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
         lputv %now.1 %tmp.8;
-        symbol [ now %now.1 60 12 15 ];
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 61 8 ]
-        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_59_33_63_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_59_33_63_4_stop" ]
+        symbol [ now %now.1 125 12 15 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 126 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_124_33_128_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_124_33_128_4_stop" ]
         %dateString.2 = local;
-        symbol [ dateString %dateString.2 61 12 22 ];
-        symbol [ Lang %tmp.9 61 25 29 ];
+        symbol [ dateString %dateString.2 126 12 22 ];
+        symbol [ Lang %tmp.9 126 25 29 ];
         %tmp.9 = getm $.Toybox.Lang;
-        symbol [ format %tmp.10 61 30 36 ];
+        symbol [ format %tmp.10 126 30 36 ];
         %tmp.10 = getv function %tmp.9 :format;
         %tmp.11 = "$1$, $2$ $3$";
         %tmp.12 = newa 3;
         %tmp.13 = lgetv %now.1;
-        symbol [ now %tmp.13 61 54 57 ];
-        symbol [ day_of_week %tmp.14 61 58 69 ];
+        symbol [ now %tmp.13 126 54 57 ];
+        symbol [ day_of_week %tmp.14 126 58 69 ];
         %tmp.14 = getv %tmp.13 :day_of_week;
         %tmp.15 = dup %tmp.12;
         %tmp.16 = aputv %tmp.15 0 %tmp.14;
         %tmp.17 = lgetv %now.1;
-        symbol [ now %tmp.17 61 71 74 ];
-        symbol [ month %tmp.18 61 75 80 ];
+        symbol [ now %tmp.17 126 71 74 ];
+        symbol [ month %tmp.18 126 75 80 ];
         %tmp.18 = getv %tmp.17 :month;
         %tmp.19 = dup %tmp.16;
         %tmp.20 = aputv %tmp.19 1 %tmp.18;
         %tmp.21 = lgetv %now.1;
-        symbol [ now %tmp.21 61 82 85 ];
-        symbol [ day %tmp.22 61 86 89 ];
+        symbol [ now %tmp.21 126 82 85 ];
+        symbol [ day %tmp.22 126 86 89 ];
         %tmp.22 = getv %tmp.21 :day;
         %tmp.23 = dup %tmp.20;
         %tmp.24 = aputv %tmp.23 2 %tmp.22;
         %tmp.25 = invoke %tmp.9 %tmp.10(%tmp.11, %tmp.24);
         lputv %dateString.2 %tmp.25;
-        symbol [ dateString %dateString.2 61 12 22 ];
-[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 62 8 ]
+        symbol [ dateString %dateString.2 126 12 22 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 127 8 ]
         %tmp.26 = lgetv %dateString.2;
-        symbol [ dateString %tmp.26 62 15 25 ];
+        symbol [ dateString %tmp.26 127 15 25 ];
         ret %tmp.26;
-C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_59_33_63_4_stop:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_124_33_128_4_stop:
     }
-    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 68; @symbol_functiondef = [onHide,68,13,19]; ]
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 130; @symbol_functiondef = [getHeartRate,130,13,25]; @symbol_return<0> = [String,130,31,37]; ]
+    function getHeartRate() as String {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_130_38_134_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 131 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_130_38_134_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_130_38_134_4_stop" ]
+        %mHeartRate.1 = local;
+        symbol [ mHeartRate %mHeartRate.1 131 12 22 ];
+        symbol [ ActivityMonitor %tmp.2 131 25 40 ];
+        %tmp.2 = getv ? :ActivityMonitor;
+        symbol [ getHeartRateHistory %tmp.3 131 41 60 ];
+        %tmp.3 = getv function %tmp.2 :getHeartRateHistory;
+        %tmp.4 = 1;
+        %tmp.5 = true;
+        %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5);
+        symbol [ next %tmp.7 131 70 74 ];
+        %tmp.7 = getv function %tmp.6 :next;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        symbol [ heartRate %tmp.9 131 77 86 ];
+        %tmp.9 = getv %tmp.8 :heartRate;
+        lputv %mHeartRate.1 %tmp.9;
+        symbol [ mHeartRate %mHeartRate.1 131 12 22 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 132 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_130_38_134_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_130_38_134_4_stop" ]
+        %hrString.2 = local;
+        symbol [ hrString %hrString.2 132 12 20 ];
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_begin:
+        %tmp.10 = lgetv %mHeartRate.1;
+        symbol [ mHeartRate %tmp.10 132 24 34 ];
+        %tmp.11 = 0;
+        %tmp.12 = gt %tmp.10 %tmp.11;
+        bf %tmp.12 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_true:
+        %tmp.13 = lgetv %mHeartRate.1;
+        symbol [ mHeartRate %tmp.13 132 42 52 ];
+        symbol [ toString %tmp.14 132 53 61 ];
+        %tmp.14 = getv function %tmp.13 :toString;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        push %tmp.15;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_else_false:
+        %tmp.16 = "--";
+        push %tmp.16;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_end:
+        %tmp.17 = phi [%tmp.12 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_begin] [%tmp.15 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_true] [%tmp.16 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_else_false] [%tmp.17 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_132_23_132_66_end];
+        lputv %hrString.2 %tmp.17;
+        symbol [ hrString %hrString.2 132 12 20 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 133 8 ]
+        %tmp.18 = lgetv %hrString.2;
+        symbol [ hrString %tmp.18 133 15 23 ];
+        ret %tmp.18;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_130_38_134_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 136; @symbol_functiondef = [getSteps,136,13,21]; @symbol_return<0> = [String,136,27,33]; ]
+    function getSteps() as String {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_136_34_140_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 137 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_136_34_140_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_136_34_140_4_stop" ]
+        %mSteps.1 = local;
+        symbol [ mSteps %mSteps.1 137 12 18 ];
+        symbol [ ActivityMonitor %tmp.2 137 21 36 ];
+        %tmp.2 = getv ? :ActivityMonitor;
+        symbol [ getInfo %tmp.3 137 37 44 ];
+        %tmp.3 = getv function %tmp.2 :getInfo;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        symbol [ steps %tmp.5 137 47 52 ];
+        %tmp.5 = getv %tmp.4 :steps;
+        lputv %mSteps.1 %tmp.5;
+        symbol [ mSteps %mSteps.1 137 12 18 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 138 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_136_34_140_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_136_34_140_4_stop" ]
+        %stepsString.2 = local;
+        symbol [ stepsString %stepsString.2 138 12 23 ];
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_begin:
+        %tmp.6 = lgetv %mSteps.1;
+        symbol [ mSteps %tmp.6 138 27 33 ];
+        %tmp.7 = 0;
+        %tmp.8 = gt %tmp.6 %tmp.7;
+        bf %tmp.8 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_true:
+        %tmp.9 = lgetv %mSteps.1;
+        symbol [ mSteps %tmp.9 138 40 46 ];
+        symbol [ toString %tmp.10 138 47 55 ];
+        %tmp.10 = getv function %tmp.9 :toString;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        push %tmp.11;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_else_false:
+        %tmp.12 = "0";
+        push %tmp.12;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_end:
+        %tmp.13 = phi [%tmp.8 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_begin] [%tmp.11 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_true] [%tmp.12 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_else_false] [%tmp.13 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_138_26_138_60_end];
+        lputv %stepsString.2 %tmp.13;
+        symbol [ stepsString %stepsString.2 138 12 23 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 139 8 ]
+        %tmp.14 = lgetv %stepsString.2;
+        symbol [ stepsString %tmp.14 139 15 26 ];
+        ret %tmp.14;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_136_34_140_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 142; @symbol_functiondef = [getBattery,142,13,23]; @symbol_return<0> = [String,142,29,35]; ]
+    function getBattery() as String {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_142_36_145_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 143 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_142_36_145_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_142_36_145_4_stop" ]
+        %batteryString.1 = local;
+        symbol [ batteryString %batteryString.1 143 12 25 ];
+        symbol [ System %tmp.1 143 28 34 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.2 143 35 49 ];
+        %tmp.2 = getv function %tmp.1 :getSystemStats;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ battery %tmp.4 143 52 59 ];
+        %tmp.4 = getv %tmp.3 :battery;
+        symbol [ format %tmp.5 143 60 66 ];
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "%d";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        lputv %batteryString.1 %tmp.7;
+        symbol [ batteryString %batteryString.1 143 12 25 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc" 144 8 ]
+        %tmp.8 = lgetv %batteryString.1;
+        symbol [ batteryString %tmp.8 144 15 28 ];
+        ret %tmp.8;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_WatchFace1_source_WatchFace1View_mc_142_36_145_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 150; @symbol_functiondef = [onHide,150,13,19]; ]
     function onHide() as Void {
     }
-    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 72; @symbol_functiondef = [onExitSleep,72,13,24]; ]
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 154; @symbol_functiondef = [onExitSleep,154,13,24]; ]
     function onExitSleep() as Void {
     }
-    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 76; @symbol_functiondef = [onEnterSleep,76,13,25]; ]
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\WatchFace1\source\WatchFace1View.mc"; @line = 158; @symbol_functiondef = [onEnterSleep,158,13,25]; ]
     function onEnterSleep() as Void {
     }
 }
