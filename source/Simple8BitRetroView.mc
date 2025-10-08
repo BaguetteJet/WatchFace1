@@ -6,7 +6,7 @@ import Toybox.Time;
 import Toybox.Time.Gregorian;
 import Toybox.Communications;
 
-class WatchFace1View extends WatchUi.WatchFace {
+class Simple8BitRetroView extends WatchUi.WatchFace {
 
     var colours as Array<Graphics.ColorValue>;
     var pix;
@@ -31,18 +31,55 @@ class WatchFace1View extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc) {
+
+        var ShowDate = Application.Properties.getValue("ShowDate");
+        var ShowBarChart = Application.Properties.getValue("ShowBarChart");
+        //var ShowBarChartValues = Application.Properties.getValue("ShowBarChartValues"); future
+
+        var currentTime = getTime();
+        var lowerText = (ShowDate) ? getDate() : "Hello World";
+
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
+
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+
+        // Display Time
+        dc.drawText(
+            dc.getWidth()/2,
+            dc.getHeight()/3.1,
+            Graphics.FONT_NUMBER_MEDIUM,
+            currentTime,
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
+        // Display Text/Date
+        dc.drawText(
+            dc.getWidth()/2,
+            dc.getHeight()/1.5,
+            Graphics.FONT_MEDIUM,
+            lowerText,  
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
 
         // 8-Bit colour boxes
         for (var i = 0; i < 8; i++) {
             dc.setColor(colours[i], Graphics.COLOR_TRANSPARENT);
             dc.fillRectangle(dc.getWidth()/2 - pix*2*(4-i), dc.getHeight()/2 - pix*5, pix*2, pix*2);
         }
+        // Bar Chart
+        if (!ShowBarChart) {return;}
+
+        var HR = ActivityMonitor.getHeartRateHistory(1, true).next().heartRate;
+        var STP = ActivityMonitor.getInfo().steps;
+        var STR = getStress();
+        var CON = (System.getDeviceSettings().connectionAvailable) ? pix*2 : 0;
+        var BAT = System.getSystemStats().battery;
+        var BOD = getBodyBattery();
+        var NOT = System.getDeviceSettings().notificationCount;
 
         // RED - Heart Rate
         dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-        var HR = ActivityMonitor.getHeartRateHistory(1, true).next().heartRate;
+        HR = (HR > 0) ? HR : 0;
         height = pix*(HR)/UserProfile.getProfile().averageRestingHeartRate;
         height = (height > pix) ? height : pix;
         dc.fillRectangle(dc.getWidth()/2 - pix*6, dc.getHeight()/2 - pix*4.9 - height, pix*2, height);
@@ -56,7 +93,6 @@ class WatchFace1View extends WatchUi.WatchFace {
 
         // GREEN - Steps
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-        var STP = ActivityMonitor.getInfo().steps;
         height = pix*2*(STP)/ActivityMonitor.getInfo().stepGoal;
         height = (height < pix*3.3) ? height : pix*3.3;
         dc.fillRectangle(dc.getWidth()/2 - pix*4, dc.getHeight()/2 - pix*4.9 - height, pix*2, height);
@@ -70,7 +106,6 @@ class WatchFace1View extends WatchUi.WatchFace {
 
         // YELLOW - Stress
         dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        var STR = getStress();
         height = pix*2*STR/100;
         dc.fillRectangle(dc.getWidth()/2 - pix*2, dc.getHeight()/2 - pix*4.9 - height, pix*2, height);
         dc.drawText(
@@ -83,7 +118,6 @@ class WatchFace1View extends WatchUi.WatchFace {
 
         // DKBLUE - Bluetooth
         dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
-        var CON = (System.getDeviceSettings().connectionAvailable) ? pix*2 : 0;
         height = CON;
         dc.fillRectangle(dc.getWidth()/2 - pix*0, dc.getHeight()/2 - pix*4.9 - height, pix*2, height);
         dc.drawText(
@@ -96,7 +130,6 @@ class WatchFace1View extends WatchUi.WatchFace {
 
         // PINK - Battery
         dc.setColor(Graphics.COLOR_PINK, Graphics.COLOR_TRANSPARENT);
-        var BAT = System.getSystemStats().battery;
         height = pix*3.3*BAT/100;
         dc.fillRectangle(dc.getWidth()/2 - pix*-2, dc.getHeight()/2 - pix*4.9 - height, pix*2, height);
         dc.drawText(
@@ -109,7 +142,6 @@ class WatchFace1View extends WatchUi.WatchFace {
 
         // BLUE - Body Battery
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-        var BOD = getBodyBattery();
         height = pix*2.5*BOD/100;
         dc.fillRectangle(dc.getWidth()/2 - pix*-4, dc.getHeight()/2 - pix*4.9 - height, pix*2, height);
         dc.drawText(
@@ -122,7 +154,6 @@ class WatchFace1View extends WatchUi.WatchFace {
 
         // WHITE - Notification
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        var NOT = System.getDeviceSettings().notificationCount;
         height = 0;
         dc.fillRectangle(dc.getWidth()/2 - pix*-6, dc.getHeight()/2 - pix*4.9 - height, pix*2, height);
         dc.drawText(
@@ -130,24 +161,6 @@ class WatchFace1View extends WatchUi.WatchFace {
             dc.getHeight()/2 - pix*7 - height,
             Graphics.FONT_XTINY,
             (NOT > 0) ? NOT : "",
-            Graphics.TEXT_JUSTIFY_CENTER
-        );
-
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-
-        dc.drawText(
-            dc.getWidth()/2,
-            dc.getHeight()/3,
-            Graphics.FONT_NUMBER_MEDIUM,
-            getTime(),
-            Graphics.TEXT_JUSTIFY_CENTER
-        );
-
-        dc.drawText(
-            dc.getWidth()/2,
-            dc.getHeight()/1.5,
-            Graphics.FONT_MEDIUM,
-            getDate(),
             Graphics.TEXT_JUSTIFY_CENTER
         );
     }
@@ -189,7 +202,6 @@ class WatchFace1View extends WatchUi.WatchFace {
         }
         return -1;
     }
-
 
     function getTime() as String {
         var clockTime = System.getClockTime();

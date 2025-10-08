@@ -16,6 +16,9 @@ module Rez {
     } // Layouts
 
     module Strings {
+        (:initialized) var ShowBarChart as ResourceId;
+        (:initialized) var ShowBarChartValues as ResourceId;
+        (:initialized) var ShowDate as ResourceId;
         (:initialized) var AppName as ResourceId;
     } // Strings
 

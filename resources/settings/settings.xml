@@ -1,0 +1,11 @@
+<settings>
+    <setting propertyKey="@Properties.ShowDate" title="@Strings.ShowDate">        
+        <settingConfig type="boolean" />        
+    </setting>
+    <setting propertyKey="@Properties.ShowBarChart" title="@Strings.ShowBarChart">        
+        <settingConfig type="boolean" />        
+    </setting>
+    <setting propertyKey="@Properties.ShowBarChartValues" title="@Strings.ShowBarChartValues">        
+        <settingConfig type="boolean" />        
+    </setting>
+</settings>

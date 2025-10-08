@@ -1,3 +1,6 @@
-<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+<strings>
     <string id="AppName">Simple8BitRetro</string>
+    <string id="ShowDate">Show date</string>
+    <string id="ShowBarChart">Show bar chart</string>
+    <string id="ShowBarChartValues">Show bar chart values</string>
 </strings>

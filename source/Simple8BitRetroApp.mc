@@ -2,7 +2,7 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-class WatchFace1App extends Application.AppBase {
+class Simple8BitRetroApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
@@ -18,11 +18,11 @@ class WatchFace1App extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new WatchFace1View() ];
+        return [ new Simple8BitRetroView() ];
     }
 
 }
 
-function getApp() as WatchFace1App {
-    return Application.getApp() as WatchFace1App;
+function getApp() as Simple8BitRetroApp {
+    return Application.getApp() as Simple8BitRetroApp;
 }

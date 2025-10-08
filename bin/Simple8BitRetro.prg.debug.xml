@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroApp.mc" id="1" lineNum="5" parent="globals/Simple8BitRetroApp" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroApp.mc" id="2" lineNum="26" parent="globals" pc="268435479" symbol="getApp"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroApp.mc" id="2" lineNum="27" parent="globals" pc="268435489" symbol="getApp"/>
+<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="4" lineNum="9" parent="globals/Simple8BitRetroView" pc="268435529" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroApp.mc" id="5" lineNum="12" parent="globals/Simple8BitRetroApp" pc="268435548" symbol="onStart"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroApp.mc" id="6" lineNum="20" parent="globals/Simple8BitRetroApp" pc="268435551" symbol="getInitialView"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroApp.mc" id="6" lineNum="21" parent="globals/Simple8BitRetroApp" pc="268435553" symbol="getInitialView"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroApp.mc" id="7" lineNum="7" parent="globals/Simple8BitRetroApp" pc="268435590" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroApp.mc" id="7" lineNum="8" parent="globals/Simple8BitRetroApp" pc="268435592" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroApp.mc" id="8" lineNum="16" parent="globals/Simple8BitRetroApp" pc="268435611" symbol="onStop"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="11" lineNum="22" parent="globals/Simple8BitRetroView" pc="268435614" symbol="onLayout"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="11" lineNum="23" parent="globals/Simple8BitRetroView" pc="268435616" symbol="onLayout"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="12" lineNum="184" parent="globals/Simple8BitRetroView" pc="268435658" symbol="getStress"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="12" lineNum="185" parent="globals/Simple8BitRetroView" pc="268435662" symbol="getStress"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="12" lineNum="186" parent="globals/Simple8BitRetroView" pc="268435675" symbol="getStress"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="12" lineNum="187" parent="globals/Simple8BitRetroView" pc="268435688" symbol="getStress"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="12" lineNum="188" parent="globals/Simple8BitRetroView" pc="268435695" symbol="getStress"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="12" lineNum="189" parent="globals/Simple8BitRetroView" pc="268435708" symbol="getStress"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="12" lineNum="191" parent="globals/Simple8BitRetroView" pc="268435720" symbol="getStress"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="12" lineNum="193" parent="globals/Simple8BitRetroView" pc="268435736" symbol="getStress"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="13" lineNum="215" parent="globals/Simple8BitRetroView" pc="268435742" symbol="getTime"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="13" lineNum="216" parent="globals/Simple8BitRetroView" pc="268435746" symbol="getTime"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="13" lineNum="217" parent="globals/Simple8BitRetroView" pc="268435763" symbol="getTime"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="13" lineNum="218" parent="globals/Simple8BitRetroView" pc="268435851" symbol="getTime"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="14" lineNum="203" parent="globals/Simple8BitRetroView" pc="268435854" symbol="getBodyBattery"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="14" lineNum="204" parent="globals/Simple8BitRetroView" pc="268435858" symbol="getBodyBattery"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="14" lineNum="205" parent="globals/Simple8BitRetroView" pc="268435871" symbol="getBodyBattery"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="14" lineNum="206" parent="globals/Simple8BitRetroView" pc="268435884" symbol="getBodyBattery"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="14" lineNum="207" parent="globals/Simple8BitRetroView" pc="268435891" symbol="getBodyBattery"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="14" lineNum="208" parent="globals/Simple8BitRetroView" pc="268435904" symbol="getBodyBattery"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="14" lineNum="210" parent="globals/Simple8BitRetroView" pc="268435916" symbol="getBodyBattery"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="14" lineNum="212" parent="globals/Simple8BitRetroView" pc="268435932" symbol="getBodyBattery"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="15" lineNum="196" parent="globals/Simple8BitRetroView" pc="268435938" symbol="getBodyBatteryIterator"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="15" lineNum="197" parent="globals/Simple8BitRetroView" pc="268435940" symbol="getBodyBatteryIterator"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="15" lineNum="198" parent="globals/Simple8BitRetroView" pc="268435976" symbol="getBodyBatteryIterator"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="15" lineNum="200" parent="globals/Simple8BitRetroView" pc="268436033" symbol="getBodyBatteryIterator"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="17" lineNum="177" parent="globals/Simple8BitRetroView" pc="268436035" symbol="getStressIterator"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="17" lineNum="178" parent="globals/Simple8BitRetroView" pc="268436037" symbol="getStressIterator"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="17" lineNum="179" parent="globals/Simple8BitRetroView" pc="268436073" symbol="getStressIterator"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="17" lineNum="181" parent="globals/Simple8BitRetroView" pc="268436130" symbol="getStressIterator"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="18" lineNum="221" parent="globals/Simple8BitRetroView" pc="268436132" symbol="getDate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="18" lineNum="222" parent="globals/Simple8BitRetroView" pc="268436136" symbol="getDate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="18" lineNum="223" parent="globals/Simple8BitRetroView" pc="268436173" symbol="getDate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="18" lineNum="224" parent="globals/Simple8BitRetroView" pc="268436249" symbol="getDate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="19" lineNum="15" parent="globals/Simple8BitRetroView" pc="268436252" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="19" lineNum="16" parent="globals/Simple8BitRetroView" pc="268436254" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="19" lineNum="17" parent="globals/Simple8BitRetroView" pc="268436272" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="19" lineNum="18" parent="globals/Simple8BitRetroView" pc="268436390" symbol="initialize"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="33" parent="globals/Simple8BitRetroView" pc="268436435" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="35" parent="globals/Simple8BitRetroView" pc="268436439" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="36" parent="globals/Simple8BitRetroView" pc="268436461" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="39" parent="globals/Simple8BitRetroView" pc="268436483" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="40" parent="globals/Simple8BitRetroView" pc="268436496" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="42" parent="globals/Simple8BitRetroView" pc="268436522" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="43" parent="globals/Simple8BitRetroView" pc="268436544" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="45" parent="globals/Simple8BitRetroView" pc="268436556" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="48" parent="globals/Simple8BitRetroView" pc="268436578" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="56" parent="globals/Simple8BitRetroView" pc="268436636" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="64" parent="globals/Simple8BitRetroView" pc="268436694" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="74" parent="globals/Simple8BitRetroView" pc="268436761" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="75" parent="globals/Simple8BitRetroView" pc="268436779" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="76" parent="globals/Simple8BitRetroView" pc="268436807" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="79" parent="globals/Simple8BitRetroView" pc="268436933" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="79" parent="globals/Simple8BitRetroView" pc="268436939" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="81" parent="globals/Simple8BitRetroView" pc="268436943" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="82" parent="globals/Simple8BitRetroView" pc="268436982" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="83" parent="globals/Simple8BitRetroView" pc="268437005" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="84" parent="globals/Simple8BitRetroView" pc="268437018" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="85" parent="globals/Simple8BitRetroView" pc="268437066" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="86" parent="globals/Simple8BitRetroView" pc="268437089" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="87" parent="globals/Simple8BitRetroView" pc="268437102" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="90" parent="globals/Simple8BitRetroView" pc="268437125" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="91" parent="globals/Simple8BitRetroView" pc="268437147" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="92" parent="globals/Simple8BitRetroView" pc="268437170" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="93" parent="globals/Simple8BitRetroView" pc="268437211" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="94" parent="globals/Simple8BitRetroView" pc="268437258" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="95" parent="globals/Simple8BitRetroView" pc="268437365" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="104" parent="globals/Simple8BitRetroView" pc="268437481" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="105" parent="globals/Simple8BitRetroView" pc="268437503" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="106" parent="globals/Simple8BitRetroView" pc="268437550" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="107" parent="globals/Simple8BitRetroView" pc="268437609" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="108" parent="globals/Simple8BitRetroView" pc="268437716" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="117" parent="globals/Simple8BitRetroView" pc="268437858" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="118" parent="globals/Simple8BitRetroView" pc="268437880" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="119" parent="globals/Simple8BitRetroView" pc="268437911" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="120" parent="globals/Simple8BitRetroView" pc="268438018" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="129" parent="globals/Simple8BitRetroView" pc="268438148" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="130" parent="globals/Simple8BitRetroView" pc="268438170" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="131" parent="globals/Simple8BitRetroView" pc="268438180" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="132" parent="globals/Simple8BitRetroView" pc="268438287" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="141" parent="globals/Simple8BitRetroView" pc="268438406" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="142" parent="globals/Simple8BitRetroView" pc="268438428" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="143" parent="globals/Simple8BitRetroView" pc="268438459" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="144" parent="globals/Simple8BitRetroView" pc="268438566" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="153" parent="globals/Simple8BitRetroView" pc="268438677" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="154" parent="globals/Simple8BitRetroView" pc="268438699" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="155" parent="globals/Simple8BitRetroView" pc="268438730" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="156" parent="globals/Simple8BitRetroView" pc="268438837" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="165" parent="globals/Simple8BitRetroView" pc="268438967" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="166" parent="globals/Simple8BitRetroView" pc="268438989" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="167" parent="globals/Simple8BitRetroView" pc="268439002" symbol="onUpdate"/>
+<entry filename="C:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\source\\Simple8BitRetroView.mc" id="21" lineNum="168" parent="globals/Simple8BitRetroView" pc="268439109" symbol="onUpdate"/>
+<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="22" lineNum="13" parent="globals/Rez/Layouts" pc="268439226" symbol="WatchFace"/>
+<entry filename="c:\\Users\\igork\\OneDrive\\Documents\\Code\\Garmin-Forerunner-55\\Simple8BitRetro\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="22" lineNum="14" parent="globals/Rez/Layouts" pc="268439236" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="19" symbol="ShowBarChart"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="7" object="true" symbol="Simple8BitRetroView"/>
+<entry id="13" method="true" symbol="getStress"/>
+<entry field="true" id="20" symbol="ShowBarChartValues"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry id="8391839" method="true" symbol="getBodyBatteryHistory"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="18" symbol="AppName"/>
+<entry id="5" module="true" symbol="globals/Rez/Strings"/>
+<entry id="11" method="true" symbol="getBodyBatteryIterator"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="8389067" symbol="height"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="12" method="true" symbol="getDate"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="21" symbol="ShowDate"/>
+<entry id="8388637" module="true" symbol="Communications"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8389809" symbol="order"/>
+<entry id="10" method="true" symbol="getBodyBattery"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="15" method="true" symbol="getTime"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="6" object="true" symbol="Simple8BitRetroApp"/>
+<entry field="true" id="9" symbol="colours"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="17" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8391847" method="true" symbol="getStressHistory"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389808" symbol="period"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389781" module="true" symbol="SensorHistory"/>
+<entry id="8" module="true" symbol="Layouts"/>
+<entry id="14" method="true" symbol="getStressIterator"/>
+<entry field="true" id="16" symbol="pix"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435657" name="dc" stackId="1" startPc="268435614"/>
+<entry endPc="268435741" name="strIterator" stackId="1" startPc="268435662"/>
+<entry endPc="268435741" name="sample" stackId="2" startPc="268435662"/>
+<entry endPc="268435853" name="clockTime" stackId="1" startPc="268435746"/>
+<entry endPc="268435853" name="timeString" stackId="2" startPc="268435746"/>
+<entry endPc="268435937" name="bbIterator" stackId="1" startPc="268435858"/>
+<entry endPc="268435937" name="sample" stackId="2" startPc="268435858"/>
+<entry endPc="268436251" name="now" stackId="1" startPc="268436136"/>
+<entry endPc="268436251" name="dateString" stackId="2" startPc="268436136"/>
+<entry arg="true" endPc="268439225" name="dc" stackId="1" startPc="268436435"/>
+<entry endPc="268439224" name="ShowDate" stackId="2" startPc="268436439"/>
+<entry endPc="268439224" name="ShowBarChart" stackId="3" startPc="268436439"/>
+<entry endPc="268439224" name="currentTime" stackId="4" startPc="268436439"/>
+<entry endPc="268439224" name="lowerText" stackId="5" startPc="268436439"/>
+<entry endPc="268436932" name="i" stackId="6" startPc="268436779"/>
+<entry endPc="268439224" name="HR" stackId="7" startPc="268436439"/>
+<entry endPc="268439224" name="STP" stackId="8" startPc="268436439"/>
+<entry endPc="268439224" name="STR" stackId="9" startPc="268436439"/>
+<entry endPc="268439224" name="CON" stackId="10" startPc="268436439"/>
+<entry endPc="268439224" name="BAT" stackId="11" startPc="268436439"/>
+<entry endPc="268439224" name="BOD" stackId="12" startPc="268436439"/>
+<entry endPc="268439224" name="NOT" stackId="13" startPc="268436439"/>
+<entry arg="true" endPc="268439242" name="dc" stackId="1" startPc="268439226"/>
+</localVars>
+<deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3869-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowBarChart"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowBarChartValues"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowDate"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="63" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Simple8BitRetroApp" offset="134" parentId="globals" symbolId="Simple8BitRetroApp" type="class"/>
+<dataEntry label="globals/Rez" offset="205" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Simple8BitRetroView" offset="260" parentId="globals" symbolId="Simple8BitRetroView" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="427" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="466" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="505" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="Simple8BitRetroApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435504" name="getApp" startPc="268435479">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435547" name="&lt;init&gt;" parent="Simple8BitRetroView" startPc="268435529">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435550" name="onStart" parent="Simple8BitRetroApp" startPc="268435548">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435589" name="getInitialView" parent="Simple8BitRetroApp" startPc="268435551">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435610" name="initialize" parent="Simple8BitRetroApp" startPc="268435590">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435613" name="onStop" parent="Simple8BitRetroApp" startPc="268435611">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="Simple8BitRetroView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="Simple8BitRetroView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435657" name="onLayout" parent="Simple8BitRetroView" startPc="268435614">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435741" name="getStress" parent="Simple8BitRetroView" startPc="268435658">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435853" name="getTime" parent="Simple8BitRetroView" startPc="268435742">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435937" name="getBodyBattery" parent="Simple8BitRetroView" startPc="268435854">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436034" name="getBodyBatteryIterator" parent="Simple8BitRetroView" startPc="268435938">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="Simple8BitRetroView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436131" name="getStressIterator" parent="Simple8BitRetroView" startPc="268436035">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436251" name="getDate" parent="Simple8BitRetroView" startPc="268436132">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436434" name="initialize" parent="Simple8BitRetroView" startPc="268436252">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="Simple8BitRetroView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439225" name="onUpdate" parent="Simple8BitRetroView" startPc="268436435">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439242" name="WatchFace" parent="Layouts" startPc="268439226">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

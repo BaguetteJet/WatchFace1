@@ -1,0 +1,1796 @@
+[ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; ]
+import Toybox.Time;
+[ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Time,6,14,18]; @symbol_importdef<2> = [Gregorian,6,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [Communications,7,14,28]; ]
+import Toybox.Communications;
+[ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 9; @symbol_classdef = [Simple8BitRetroView,9,6,25]; @symbol_extends<0> = [WatchUi,9,34,41]; @symbol_extends<1> = [WatchFace,9,42,51]; ]
+class Simple8BitRetroView extends WatchUi.WatchFace {
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 11; @position = 8; @symbol_vardef = [colours,11,8,15]; @symbol_type<0> = [Array,11,19,24]; @symbol_type<1> = [Graphics,11,25,33]; @symbol_type<2> = [ColorValue,11,34,44]; ]
+    var colours as Array<Graphics.ColorValue>;
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 12; @position = 8; @symbol_vardef = [pix,12,8,11]; ]
+    var pix;
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 13; @position = 8; @symbol_vardef = [height,13,8,14]; ]
+    var height;
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; ]
+    function initialize() as Void {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_15_26_19_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 16 8 ]
+        symbol [ WatchFace %tmp.2 16 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 16 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 17 8 ]
+        %tmp.4 = newa 8;
+        symbol [ Graphics %tmp.5 17 19 27 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 17 28 39 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        %tmp.7 = dup %tmp.4;
+        %tmp.8 = aputv %tmp.7 0 %tmp.6;
+        symbol [ Graphics %tmp.9 17 41 49 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.10 17 50 59 ];
+        %tmp.10 = getv %tmp.9 :COLOR_RED;
+        %tmp.11 = dup %tmp.8;
+        %tmp.12 = aputv %tmp.11 1 %tmp.10;
+        symbol [ Graphics %tmp.13 17 61 69 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.14 17 70 81 ];
+        %tmp.14 = getv %tmp.13 :COLOR_GREEN;
+        %tmp.15 = dup %tmp.12;
+        %tmp.16 = aputv %tmp.15 2 %tmp.14;
+        symbol [ Graphics %tmp.17 17 83 91 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.18 17 92 104 ];
+        %tmp.18 = getv %tmp.17 :COLOR_YELLOW;
+        %tmp.19 = dup %tmp.16;
+        %tmp.20 = aputv %tmp.19 3 %tmp.18;
+        symbol [ Graphics %tmp.21 17 106 114 ];
+        %tmp.21 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_BLUE %tmp.22 17 115 128 ];
+        %tmp.22 = getv %tmp.21 :COLOR_DK_BLUE;
+        %tmp.23 = dup %tmp.20;
+        %tmp.24 = aputv %tmp.23 4 %tmp.22;
+        symbol [ Graphics %tmp.25 17 130 138 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ COLOR_PINK %tmp.26 17 139 149 ];
+        %tmp.26 = getv %tmp.25 :COLOR_PINK;
+        %tmp.27 = dup %tmp.24;
+        %tmp.28 = aputv %tmp.27 5 %tmp.26;
+        symbol [ Graphics %tmp.29 17 151 159 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.30 17 160 170 ];
+        %tmp.30 = getv %tmp.29 :COLOR_BLUE;
+        %tmp.31 = dup %tmp.28;
+        %tmp.32 = aputv %tmp.31 6 %tmp.30;
+        symbol [ Graphics %tmp.33 17 172 180 ];
+        %tmp.33 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.34 17 181 192 ];
+        %tmp.34 = getv %tmp.33 :COLOR_WHITE;
+        %tmp.35 = dup %tmp.32;
+        %tmp.36 = aputv %tmp.35 7 %tmp.34;
+        symbol [ colours ? 17 8 15 ];
+        putv self :colours %tmp.36;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 18 8 ]
+        symbol [ System %tmp.37 18 15 21 ];
+        %tmp.37 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.38 18 22 39 ];
+        %tmp.38 = getv function %tmp.37 :getDeviceSettings;
+        %tmp.39 = invoke %tmp.37 %tmp.38();
+        symbol [ screenWidth %tmp.40 18 42 53 ];
+        %tmp.40 = getv %tmp.39 :screenWidth;
+        %tmp.41 = 0.05;
+        %tmp.42 = mul %tmp.40 %tmp.41;
+        symbol [ toNumber %tmp.43 18 60 68 ];
+        %tmp.43 = getv function %tmp.42 :toNumber;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        symbol [ pix ? 18 8 11 ];
+        putv self :pix %tmp.44;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_15_26_19_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 22; @symbol_functiondef = [onLayout,22,13,21]; @symbol_param<0> = [dc,22,22,24]; @symbol_param<0>_type<0> = [Dc,22,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_22_40_24_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 23 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 23 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 23 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 23 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ WatchFace %tmp.6 23 30 39 ];
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 23 40 42 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_22_40_24_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 29; @symbol_functiondef = [onShow,29,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 33; @symbol_functiondef = [onUpdate,33,13,21]; @symbol_param<0> = [dc,33,22,24]; ]
+    function onUpdate(dc) {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 35 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %ShowDate.1 = local;
+        symbol [ ShowDate %ShowDate.1 35 12 20 ];
+        symbol [ Application %tmp.2 35 23 34 ];
+        %tmp.2 = getv ? :Application;
+        symbol [ Properties %tmp.3 35 35 45 ];
+        %tmp.3 = getv %tmp.2 :Properties;
+        symbol [ getValue %tmp.4 35 46 54 ];
+        %tmp.4 = getv function %tmp.3 :getValue;
+        %tmp.5 = "ShowDate";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        lputv %ShowDate.1 %tmp.6;
+        symbol [ ShowDate %ShowDate.1 35 12 20 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 36 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %ShowBarChart.2 = local;
+        symbol [ ShowBarChart %ShowBarChart.2 36 12 24 ];
+        symbol [ Application %tmp.8 36 27 38 ];
+        %tmp.8 = getv ? :Application;
+        symbol [ Properties %tmp.9 36 39 49 ];
+        %tmp.9 = getv %tmp.8 :Properties;
+        symbol [ getValue %tmp.10 36 50 58 ];
+        %tmp.10 = getv function %tmp.9 :getValue;
+        %tmp.11 = "ShowBarChart";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        lputv %ShowBarChart.2 %tmp.12;
+        symbol [ ShowBarChart %ShowBarChart.2 36 12 24 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 39 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %currentTime.3 = local;
+        symbol [ currentTime %currentTime.3 39 12 23 ];
+        %tmp.13 = self;
+        symbol [ getTime %tmp.14 39 26 33 ];
+        %tmp.14 = getv function %tmp.13 :getTime;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        lputv %currentTime.3 %tmp.15;
+        symbol [ currentTime %currentTime.3 39 12 23 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 40 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %lowerText.4 = local;
+        symbol [ lowerText %lowerText.4 40 12 21 ];
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_begin:
+        %tmp.16 = lgetv %ShowDate.1;
+        symbol [ ShowDate %tmp.16 40 25 33 ];
+        bf %tmp.16 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_true:
+        %tmp.17 = self;
+        symbol [ getDate %tmp.18 40 37 44 ];
+        %tmp.18 = getv function %tmp.17 :getDate;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        push %tmp.19;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_else_false:
+        %tmp.20 = "Hello World";
+        push %tmp.20;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_end:
+        %tmp.21 = phi [%tmp.16 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_begin] [%tmp.19 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_true] [%tmp.20 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_else_false] [%tmp.21 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_40_24_40_49_end];
+        lputv %lowerText.4 %tmp.21;
+        symbol [ lowerText %lowerText.4 40 12 21 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 42 8 ]
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 42 8 10 ];
+        symbol [ setColor %tmp.23 42 11 19 ];
+        %tmp.23 = getv function %tmp.22 :setColor;
+        symbol [ Graphics %tmp.24 42 20 28 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.25 42 29 40 ];
+        %tmp.25 = getv %tmp.24 :COLOR_BLACK;
+        symbol [ Graphics %tmp.26 42 42 50 ];
+        %tmp.26 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.27 42 51 62 ];
+        %tmp.27 = getv %tmp.26 :COLOR_BLACK;
+        invoke %tmp.22 %tmp.23(%tmp.25, %tmp.27);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 43 8 ]
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 43 8 10 ];
+        symbol [ clear %tmp.29 43 11 16 ];
+        %tmp.29 = getv function %tmp.28 :clear;
+        invoke %tmp.28 %tmp.29();
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 45 8 ]
+        %tmp.30 = lgetv %dc;
+        symbol [ dc %tmp.30 45 8 10 ];
+        symbol [ setColor %tmp.31 45 11 19 ];
+        %tmp.31 = getv function %tmp.30 :setColor;
+        symbol [ Graphics %tmp.32 45 20 28 ];
+        %tmp.32 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.33 45 29 40 ];
+        %tmp.33 = getv %tmp.32 :COLOR_WHITE;
+        symbol [ Graphics %tmp.34 45 42 50 ];
+        %tmp.34 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.35 45 51 68 ];
+        %tmp.35 = getv %tmp.34 :COLOR_TRANSPARENT;
+        invoke %tmp.30 %tmp.31(%tmp.33, %tmp.35);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 48 8 ]
+        %tmp.36 = lgetv %dc;
+        symbol [ dc %tmp.36 48 8 10 ];
+        symbol [ drawText %tmp.37 48 11 19 ];
+        %tmp.37 = getv function %tmp.36 :drawText;
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 49 12 14 ];
+        symbol [ getWidth %tmp.39 49 15 23 ];
+        %tmp.39 = getv function %tmp.38 :getWidth;
+        %tmp.40 = invoke %tmp.38 %tmp.39();
+        %tmp.41 = 2;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 50 12 14 ];
+        symbol [ getHeight %tmp.44 50 15 24 ];
+        %tmp.44 = getv function %tmp.43 :getHeight;
+        %tmp.45 = invoke %tmp.43 %tmp.44();
+        %tmp.46 = 3.1;
+        %tmp.47 = div %tmp.45 %tmp.46;
+        symbol [ Graphics %tmp.48 51 12 20 ];
+        %tmp.48 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MEDIUM %tmp.49 51 21 39 ];
+        %tmp.49 = getv %tmp.48 :FONT_NUMBER_MEDIUM;
+        %tmp.50 = lgetv %currentTime.3;
+        symbol [ currentTime %tmp.50 52 12 23 ];
+        symbol [ Graphics %tmp.51 53 12 20 ];
+        %tmp.51 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.52 53 21 40 ];
+        %tmp.52 = getv %tmp.51 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.36 %tmp.37(%tmp.42, %tmp.47, %tmp.49, %tmp.50, %tmp.52);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 56 8 ]
+        %tmp.53 = lgetv %dc;
+        symbol [ dc %tmp.53 56 8 10 ];
+        symbol [ drawText %tmp.54 56 11 19 ];
+        %tmp.54 = getv function %tmp.53 :drawText;
+        %tmp.55 = lgetv %dc;
+        symbol [ dc %tmp.55 57 12 14 ];
+        symbol [ getWidth %tmp.56 57 15 23 ];
+        %tmp.56 = getv function %tmp.55 :getWidth;
+        %tmp.57 = invoke %tmp.55 %tmp.56();
+        %tmp.58 = 2;
+        %tmp.59 = div %tmp.57 %tmp.58;
+        %tmp.60 = lgetv %dc;
+        symbol [ dc %tmp.60 58 12 14 ];
+        symbol [ getHeight %tmp.61 58 15 24 ];
+        %tmp.61 = getv function %tmp.60 :getHeight;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        %tmp.63 = 1.5;
+        %tmp.64 = div %tmp.62 %tmp.63;
+        symbol [ Graphics %tmp.65 59 12 20 ];
+        %tmp.65 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.66 59 21 32 ];
+        %tmp.66 = getv %tmp.65 :FONT_MEDIUM;
+        %tmp.67 = lgetv %lowerText.4;
+        symbol [ lowerText %tmp.67 60 12 21 ];
+        symbol [ Graphics %tmp.68 61 12 20 ];
+        %tmp.68 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.69 61 21 40 ];
+        %tmp.69 = getv %tmp.68 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.53 %tmp.54(%tmp.59, %tmp.64, %tmp.66, %tmp.67, %tmp.69);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 65 8 ]
+        for @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_test @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_incr @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_init:
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_begin" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_end" ]
+        %i.5 = local;
+        symbol [ i %i.5 65 17 18 ];
+        %tmp.70 = 0;
+        lputv %i.5 %tmp.70;
+        symbol [ i %i.5 65 17 18 ];
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_test:
+        %tmp.71 = lgetv %i.5;
+        symbol [ i %tmp.71 65 24 25 ];
+        %tmp.72 = 8;
+        %tmp.73 = lt %tmp.71 %tmp.72;
+        bf %tmp.73 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_begin:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_36_68_8_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 66 12 ]
+        %tmp.74 = lgetv %dc;
+        symbol [ dc %tmp.74 66 12 14 ];
+        symbol [ setColor %tmp.75 66 15 23 ];
+        %tmp.75 = getv function %tmp.74 :setColor;
+        symbol [ colours %tmp.77 66 24 31 ];
+        %tmp.77 = getv ? :colours;
+        %tmp.78 = lgetv %i.5;
+        symbol [ i %tmp.78 66 32 33 ];
+        %tmp.79 = agetv %tmp.77 %tmp.78;
+        symbol [ Graphics %tmp.80 66 36 44 ];
+        %tmp.80 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.81 66 45 62 ];
+        %tmp.81 = getv %tmp.80 :COLOR_TRANSPARENT;
+        invoke %tmp.74 %tmp.75(%tmp.79, %tmp.81);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 67 12 ]
+        %tmp.82 = lgetv %dc;
+        symbol [ dc %tmp.82 67 12 14 ];
+        symbol [ fillRectangle %tmp.83 67 15 28 ];
+        %tmp.83 = getv function %tmp.82 :fillRectangle;
+        %tmp.84 = lgetv %dc;
+        symbol [ dc %tmp.84 67 29 31 ];
+        symbol [ getWidth %tmp.85 67 32 40 ];
+        %tmp.85 = getv function %tmp.84 :getWidth;
+        %tmp.86 = invoke %tmp.84 %tmp.85();
+        %tmp.87 = 2;
+        %tmp.88 = div %tmp.86 %tmp.87;
+        symbol [ pix %tmp.90 67 47 50 ];
+        %tmp.90 = getv ? :pix;
+        %tmp.91 = 2;
+        %tmp.92 = mul %tmp.90 %tmp.91;
+        %tmp.93 = 4;
+        %tmp.94 = lgetv %i.5;
+        symbol [ i %tmp.94 67 56 57 ];
+        %tmp.95 = sub %tmp.93 %tmp.94;
+        %tmp.96 = mul %tmp.92 %tmp.95;
+        %tmp.97 = sub %tmp.88 %tmp.96;
+        %tmp.98 = lgetv %dc;
+        symbol [ dc %tmp.98 67 60 62 ];
+        symbol [ getHeight %tmp.99 67 63 72 ];
+        %tmp.99 = getv function %tmp.98 :getHeight;
+        %tmp.100 = invoke %tmp.98 %tmp.99();
+        %tmp.101 = 2;
+        %tmp.102 = div %tmp.100 %tmp.101;
+        symbol [ pix %tmp.104 67 79 82 ];
+        %tmp.104 = getv ? :pix;
+        %tmp.105 = 5;
+        %tmp.106 = mul %tmp.104 %tmp.105;
+        %tmp.107 = sub %tmp.102 %tmp.106;
+        symbol [ pix %tmp.109 67 86 89 ];
+        %tmp.109 = getv ? :pix;
+        %tmp.110 = 2;
+        %tmp.111 = mul %tmp.109 %tmp.110;
+        symbol [ pix %tmp.113 67 93 96 ];
+        %tmp.113 = getv ? :pix;
+        %tmp.114 = 2;
+        %tmp.115 = mul %tmp.113 %tmp.114;
+        invoke %tmp.82 %tmp.83(%tmp.97, %tmp.107, %tmp.111, %tmp.115);
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_36_68_8_stop:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_incr:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 65 ]
+        %tmp.118 = lgetv %i.5;
+        symbol [ i %tmp.118 65 31 32 ];
+        %tmp.119 = add %tmp.118 1;
+        lputv %i.5 %tmp.119;
+        symbol [ i %i.5 65 31 32 ];
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_test;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_65_8_68_8_for_end:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 70 8 ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_70_8_70_35_if_stmt:
+        %tmp.120 = lgetv %ShowBarChart.2;
+        symbol [ ShowBarChart %tmp.120 70 13 25 ];
+        %tmp.121 = not %tmp.120;
+        bf %tmp.121 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_70_8_70_35_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_70_8_70_35_if_true:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_70_27_70_35_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 70 28 ]
+        ret ?;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_70_27_70_35_stop:
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_70_8_70_35_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_70_8_70_35_if_end:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 72 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %HR.6 = local;
+        symbol [ HR %HR.6 72 12 14 ];
+        symbol [ ActivityMonitor %tmp.123 72 17 32 ];
+        %tmp.123 = getv ? :ActivityMonitor;
+        symbol [ getHeartRateHistory %tmp.124 72 33 52 ];
+        %tmp.124 = getv function %tmp.123 :getHeartRateHistory;
+        %tmp.125 = 1;
+        %tmp.126 = true;
+        %tmp.127 = invoke %tmp.123 %tmp.124(%tmp.125, %tmp.126);
+        symbol [ next %tmp.128 72 62 66 ];
+        %tmp.128 = getv function %tmp.127 :next;
+        %tmp.129 = invoke %tmp.127 %tmp.128();
+        symbol [ heartRate %tmp.130 72 69 78 ];
+        %tmp.130 = getv %tmp.129 :heartRate;
+        lputv %HR.6 %tmp.130;
+        symbol [ HR %HR.6 72 12 14 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 73 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %STP.7 = local;
+        symbol [ STP %STP.7 73 12 15 ];
+        symbol [ ActivityMonitor %tmp.132 73 18 33 ];
+        %tmp.132 = getv ? :ActivityMonitor;
+        symbol [ getInfo %tmp.133 73 34 41 ];
+        %tmp.133 = getv function %tmp.132 :getInfo;
+        %tmp.134 = invoke %tmp.132 %tmp.133();
+        symbol [ steps %tmp.135 73 44 49 ];
+        %tmp.135 = getv %tmp.134 :steps;
+        lputv %STP.7 %tmp.135;
+        symbol [ STP %STP.7 73 12 15 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 74 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %STR.8 = local;
+        symbol [ STR %STR.8 74 12 15 ];
+        %tmp.136 = self;
+        symbol [ getStress %tmp.137 74 18 27 ];
+        %tmp.137 = getv function %tmp.136 :getStress;
+        %tmp.138 = invoke %tmp.136 %tmp.137();
+        lputv %STR.8 %tmp.138;
+        symbol [ STR %STR.8 74 12 15 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 75 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %CON.9 = local;
+        symbol [ CON %CON.9 75 12 15 ];
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_begin:
+        symbol [ System %tmp.139 75 19 25 ];
+        %tmp.139 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.140 75 26 43 ];
+        %tmp.140 = getv function %tmp.139 :getDeviceSettings;
+        %tmp.141 = invoke %tmp.139 %tmp.140();
+        symbol [ connectionAvailable %tmp.142 75 46 65 ];
+        %tmp.142 = getv %tmp.141 :connectionAvailable;
+        bf %tmp.142 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_true:
+        symbol [ pix %tmp.144 75 69 72 ];
+        %tmp.144 = getv ? :pix;
+        %tmp.145 = 2;
+        %tmp.146 = mul %tmp.144 %tmp.145;
+        push %tmp.146;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_else_false:
+        %tmp.147 = 0;
+        push %tmp.147;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_end:
+        %tmp.148 = phi [%tmp.142 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_begin] [%tmp.146 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_true] [%tmp.147 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_else_false] [%tmp.148 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_75_18_75_77_end];
+        lputv %CON.9 %tmp.148;
+        symbol [ CON %CON.9 75 12 15 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 76 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %BAT.10 = local;
+        symbol [ BAT %BAT.10 76 12 15 ];
+        symbol [ System %tmp.149 76 18 24 ];
+        %tmp.149 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.150 76 25 39 ];
+        %tmp.150 = getv function %tmp.149 :getSystemStats;
+        %tmp.151 = invoke %tmp.149 %tmp.150();
+        symbol [ battery %tmp.152 76 42 49 ];
+        %tmp.152 = getv %tmp.151 :battery;
+        lputv %BAT.10 %tmp.152;
+        symbol [ BAT %BAT.10 76 12 15 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 77 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %BOD.11 = local;
+        symbol [ BOD %BOD.11 77 12 15 ];
+        %tmp.153 = self;
+        symbol [ getBodyBattery %tmp.154 77 18 32 ];
+        %tmp.154 = getv function %tmp.153 :getBodyBattery;
+        %tmp.155 = invoke %tmp.153 %tmp.154();
+        lputv %BOD.11 %tmp.155;
+        symbol [ BOD %BOD.11 77 12 15 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 78 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop" ]
+        %NOT.12 = local;
+        symbol [ NOT %NOT.12 78 12 15 ];
+        symbol [ System %tmp.156 78 18 24 ];
+        %tmp.156 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.157 78 25 42 ];
+        %tmp.157 = getv function %tmp.156 :getDeviceSettings;
+        %tmp.158 = invoke %tmp.156 %tmp.157();
+        symbol [ notificationCount %tmp.159 78 45 62 ];
+        %tmp.159 = getv %tmp.158 :notificationCount;
+        lputv %NOT.12 %tmp.159;
+        symbol [ NOT %NOT.12 78 12 15 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 81 8 ]
+        %tmp.160 = lgetv %dc;
+        symbol [ dc %tmp.160 81 8 10 ];
+        symbol [ setColor %tmp.161 81 11 19 ];
+        %tmp.161 = getv function %tmp.160 :setColor;
+        symbol [ Graphics %tmp.162 81 20 28 ];
+        %tmp.162 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.163 81 29 38 ];
+        %tmp.163 = getv %tmp.162 :COLOR_RED;
+        symbol [ Graphics %tmp.164 81 40 48 ];
+        %tmp.164 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.165 81 49 66 ];
+        %tmp.165 = getv %tmp.164 :COLOR_TRANSPARENT;
+        invoke %tmp.160 %tmp.161(%tmp.163, %tmp.165);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 82 8 ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_begin:
+        %tmp.166 = lgetv %HR.6;
+        symbol [ HR %tmp.166 82 14 16 ];
+        %tmp.167 = 0;
+        %tmp.168 = gt %tmp.166 %tmp.167;
+        bf %tmp.168 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_true:
+        %tmp.169 = lgetv %HR.6;
+        symbol [ HR %tmp.169 82 24 26 ];
+        push %tmp.169;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_else_false:
+        %tmp.170 = 0;
+        push %tmp.170;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_end:
+        %tmp.171 = phi [%tmp.168 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_begin] [%tmp.169 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_true] [%tmp.170 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_else_false] [%tmp.171 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_82_13_82_29_end];
+        lputv %HR.6 %tmp.171;
+        symbol [ HR %HR.6 82 8 10 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 83 8 ]
+        symbol [ pix %tmp.173 83 17 20 ];
+        %tmp.173 = getv ? :pix;
+        %tmp.174 = lgetv %HR.6;
+        symbol [ HR %tmp.174 83 22 24 ];
+        %tmp.175 = mul %tmp.173 %tmp.174;
+        symbol [ UserProfile %tmp.177 83 26 37 ];
+        %tmp.177 = getv ? :UserProfile;
+        symbol [ getProfile %tmp.178 83 38 48 ];
+        %tmp.178 = getv function %tmp.177 :getProfile;
+        %tmp.179 = invoke %tmp.177 %tmp.178();
+        symbol [ averageRestingHeartRate %tmp.180 83 51 74 ];
+        %tmp.180 = getv %tmp.179 :averageRestingHeartRate;
+        %tmp.181 = div %tmp.175 %tmp.180;
+        symbol [ height ? 83 8 14 ];
+        putv self :height %tmp.181;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 84 8 ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_begin:
+        symbol [ height %tmp.183 84 18 24 ];
+        %tmp.183 = getv ? :height;
+        symbol [ pix %tmp.185 84 27 30 ];
+        %tmp.185 = getv ? :pix;
+        %tmp.186 = gt %tmp.183 %tmp.185;
+        bf %tmp.186 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_true:
+        symbol [ height %tmp.188 84 34 40 ];
+        %tmp.188 = getv ? :height;
+        push %tmp.188;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_else_false:
+        symbol [ pix %tmp.190 84 43 46 ];
+        %tmp.190 = getv ? :pix;
+        push %tmp.190;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_end:
+        %tmp.191 = phi [%tmp.186 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_begin] [%tmp.188 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_true] [%tmp.190 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_else_false] [%tmp.191 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_84_17_84_43_end];
+        symbol [ height ? 84 8 14 ];
+        putv self :height %tmp.191;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 85 8 ]
+        %tmp.192 = lgetv %dc;
+        symbol [ dc %tmp.192 85 8 10 ];
+        symbol [ fillRectangle %tmp.193 85 11 24 ];
+        %tmp.193 = getv function %tmp.192 :fillRectangle;
+        %tmp.194 = lgetv %dc;
+        symbol [ dc %tmp.194 85 25 27 ];
+        symbol [ getWidth %tmp.195 85 28 36 ];
+        %tmp.195 = getv function %tmp.194 :getWidth;
+        %tmp.196 = invoke %tmp.194 %tmp.195();
+        %tmp.197 = 2;
+        %tmp.198 = div %tmp.196 %tmp.197;
+        symbol [ pix %tmp.200 85 43 46 ];
+        %tmp.200 = getv ? :pix;
+        %tmp.201 = 6;
+        %tmp.202 = mul %tmp.200 %tmp.201;
+        %tmp.203 = sub %tmp.198 %tmp.202;
+        %tmp.204 = lgetv %dc;
+        symbol [ dc %tmp.204 85 50 52 ];
+        symbol [ getHeight %tmp.205 85 53 62 ];
+        %tmp.205 = getv function %tmp.204 :getHeight;
+        %tmp.206 = invoke %tmp.204 %tmp.205();
+        %tmp.207 = 2;
+        %tmp.208 = div %tmp.206 %tmp.207;
+        symbol [ pix %tmp.210 85 69 72 ];
+        %tmp.210 = getv ? :pix;
+        %tmp.211 = 4.9;
+        %tmp.212 = mul %tmp.210 %tmp.211;
+        %tmp.213 = sub %tmp.208 %tmp.212;
+        symbol [ height %tmp.215 85 79 85 ];
+        %tmp.215 = getv ? :height;
+        %tmp.216 = sub %tmp.213 %tmp.215;
+        symbol [ pix %tmp.218 85 87 90 ];
+        %tmp.218 = getv ? :pix;
+        %tmp.219 = 2;
+        %tmp.220 = mul %tmp.218 %tmp.219;
+        symbol [ height %tmp.222 85 94 100 ];
+        %tmp.222 = getv ? :height;
+        invoke %tmp.192 %tmp.193(%tmp.203, %tmp.216, %tmp.220, %tmp.222);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 86 8 ]
+        %tmp.223 = lgetv %dc;
+        symbol [ dc %tmp.223 86 8 10 ];
+        symbol [ drawText %tmp.224 86 11 19 ];
+        %tmp.224 = getv function %tmp.223 :drawText;
+        %tmp.225 = lgetv %dc;
+        symbol [ dc %tmp.225 87 12 14 ];
+        symbol [ getWidth %tmp.226 87 15 23 ];
+        %tmp.226 = getv function %tmp.225 :getWidth;
+        %tmp.227 = invoke %tmp.225 %tmp.226();
+        %tmp.228 = 2;
+        %tmp.229 = div %tmp.227 %tmp.228;
+        symbol [ pix %tmp.231 87 30 33 ];
+        %tmp.231 = getv ? :pix;
+        %tmp.232 = 5;
+        %tmp.233 = mul %tmp.231 %tmp.232;
+        %tmp.234 = sub %tmp.229 %tmp.233;
+        %tmp.235 = lgetv %dc;
+        symbol [ dc %tmp.235 88 12 14 ];
+        symbol [ getHeight %tmp.236 88 15 24 ];
+        %tmp.236 = getv function %tmp.235 :getHeight;
+        %tmp.237 = invoke %tmp.235 %tmp.236();
+        %tmp.238 = 2;
+        %tmp.239 = div %tmp.237 %tmp.238;
+        symbol [ pix %tmp.241 88 31 34 ];
+        %tmp.241 = getv ? :pix;
+        %tmp.242 = 7;
+        %tmp.243 = mul %tmp.241 %tmp.242;
+        %tmp.244 = sub %tmp.239 %tmp.243;
+        symbol [ height %tmp.246 88 39 45 ];
+        %tmp.246 = getv ? :height;
+        %tmp.247 = sub %tmp.244 %tmp.246;
+        symbol [ Graphics %tmp.248 89 12 20 ];
+        %tmp.248 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.249 89 21 31 ];
+        %tmp.249 = getv %tmp.248 :FONT_XTINY;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_begin:
+        %tmp.250 = lgetv %HR.6;
+        symbol [ HR %tmp.250 90 13 15 ];
+        %tmp.251 = 0;
+        %tmp.252 = gt %tmp.250 %tmp.251;
+        bf %tmp.252 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_true:
+        %tmp.253 = lgetv %HR.6;
+        symbol [ HR %tmp.253 90 23 25 ];
+        push %tmp.253;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_else_false:
+        %tmp.254 = "-";
+        push %tmp.254;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_end:
+        %tmp.255 = phi [%tmp.252 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_begin] [%tmp.253 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_true] [%tmp.254 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_else_false] [%tmp.255 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_90_12_90_28_end];
+        symbol [ Graphics %tmp.256 91 12 20 ];
+        %tmp.256 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.257 91 21 40 ];
+        %tmp.257 = getv %tmp.256 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.223 %tmp.224(%tmp.234, %tmp.247, %tmp.249, %tmp.255, %tmp.257);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 95 8 ]
+        %tmp.258 = lgetv %dc;
+        symbol [ dc %tmp.258 95 8 10 ];
+        symbol [ setColor %tmp.259 95 11 19 ];
+        %tmp.259 = getv function %tmp.258 :setColor;
+        symbol [ Graphics %tmp.260 95 20 28 ];
+        %tmp.260 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.261 95 29 40 ];
+        %tmp.261 = getv %tmp.260 :COLOR_GREEN;
+        symbol [ Graphics %tmp.262 95 42 50 ];
+        %tmp.262 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.263 95 51 68 ];
+        %tmp.263 = getv %tmp.262 :COLOR_TRANSPARENT;
+        invoke %tmp.258 %tmp.259(%tmp.261, %tmp.263);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 96 8 ]
+        symbol [ pix %tmp.265 96 17 20 ];
+        %tmp.265 = getv ? :pix;
+        %tmp.266 = 2;
+        %tmp.267 = mul %tmp.265 %tmp.266;
+        %tmp.268 = lgetv %STP.7;
+        symbol [ STP %tmp.268 96 24 27 ];
+        %tmp.269 = mul %tmp.267 %tmp.268;
+        symbol [ ActivityMonitor %tmp.271 96 29 44 ];
+        %tmp.271 = getv ? :ActivityMonitor;
+        symbol [ getInfo %tmp.272 96 45 52 ];
+        %tmp.272 = getv function %tmp.271 :getInfo;
+        %tmp.273 = invoke %tmp.271 %tmp.272();
+        symbol [ stepGoal %tmp.274 96 55 63 ];
+        %tmp.274 = getv %tmp.273 :stepGoal;
+        %tmp.275 = div %tmp.269 %tmp.274;
+        symbol [ height ? 96 8 14 ];
+        putv self :height %tmp.275;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 97 8 ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_begin:
+        symbol [ height %tmp.277 97 18 24 ];
+        %tmp.277 = getv ? :height;
+        symbol [ pix %tmp.279 97 27 30 ];
+        %tmp.279 = getv ? :pix;
+        %tmp.280 = 3.3;
+        %tmp.281 = mul %tmp.279 %tmp.280;
+        %tmp.282 = lt %tmp.277 %tmp.281;
+        bf %tmp.282 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_true:
+        symbol [ height %tmp.284 97 38 44 ];
+        %tmp.284 = getv ? :height;
+        push %tmp.284;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_else_false:
+        symbol [ pix %tmp.286 97 47 50 ];
+        %tmp.286 = getv ? :pix;
+        %tmp.287 = 3.3;
+        %tmp.288 = mul %tmp.286 %tmp.287;
+        push %tmp.288;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_end:
+        %tmp.289 = phi [%tmp.282 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_begin] [%tmp.284 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_true] [%tmp.288 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_else_false] [%tmp.289 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_97_17_97_51_end];
+        symbol [ height ? 97 8 14 ];
+        putv self :height %tmp.289;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 98 8 ]
+        %tmp.290 = lgetv %dc;
+        symbol [ dc %tmp.290 98 8 10 ];
+        symbol [ fillRectangle %tmp.291 98 11 24 ];
+        %tmp.291 = getv function %tmp.290 :fillRectangle;
+        %tmp.292 = lgetv %dc;
+        symbol [ dc %tmp.292 98 25 27 ];
+        symbol [ getWidth %tmp.293 98 28 36 ];
+        %tmp.293 = getv function %tmp.292 :getWidth;
+        %tmp.294 = invoke %tmp.292 %tmp.293();
+        %tmp.295 = 2;
+        %tmp.296 = div %tmp.294 %tmp.295;
+        symbol [ pix %tmp.298 98 43 46 ];
+        %tmp.298 = getv ? :pix;
+        %tmp.299 = 4;
+        %tmp.300 = mul %tmp.298 %tmp.299;
+        %tmp.301 = sub %tmp.296 %tmp.300;
+        %tmp.302 = lgetv %dc;
+        symbol [ dc %tmp.302 98 50 52 ];
+        symbol [ getHeight %tmp.303 98 53 62 ];
+        %tmp.303 = getv function %tmp.302 :getHeight;
+        %tmp.304 = invoke %tmp.302 %tmp.303();
+        %tmp.305 = 2;
+        %tmp.306 = div %tmp.304 %tmp.305;
+        symbol [ pix %tmp.308 98 69 72 ];
+        %tmp.308 = getv ? :pix;
+        %tmp.309 = 4.9;
+        %tmp.310 = mul %tmp.308 %tmp.309;
+        %tmp.311 = sub %tmp.306 %tmp.310;
+        symbol [ height %tmp.313 98 79 85 ];
+        %tmp.313 = getv ? :height;
+        %tmp.314 = sub %tmp.311 %tmp.313;
+        symbol [ pix %tmp.316 98 87 90 ];
+        %tmp.316 = getv ? :pix;
+        %tmp.317 = 2;
+        %tmp.318 = mul %tmp.316 %tmp.317;
+        symbol [ height %tmp.320 98 94 100 ];
+        %tmp.320 = getv ? :height;
+        invoke %tmp.290 %tmp.291(%tmp.301, %tmp.314, %tmp.318, %tmp.320);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 99 8 ]
+        %tmp.321 = lgetv %dc;
+        symbol [ dc %tmp.321 99 8 10 ];
+        symbol [ drawText %tmp.322 99 11 19 ];
+        %tmp.322 = getv function %tmp.321 :drawText;
+        %tmp.323 = lgetv %dc;
+        symbol [ dc %tmp.323 100 12 14 ];
+        symbol [ getWidth %tmp.324 100 15 23 ];
+        %tmp.324 = getv function %tmp.323 :getWidth;
+        %tmp.325 = invoke %tmp.323 %tmp.324();
+        %tmp.326 = 2;
+        %tmp.327 = div %tmp.325 %tmp.326;
+        symbol [ pix %tmp.329 100 30 33 ];
+        %tmp.329 = getv ? :pix;
+        %tmp.330 = 3;
+        %tmp.331 = mul %tmp.329 %tmp.330;
+        %tmp.332 = sub %tmp.327 %tmp.331;
+        %tmp.333 = lgetv %dc;
+        symbol [ dc %tmp.333 101 12 14 ];
+        symbol [ getHeight %tmp.334 101 15 24 ];
+        %tmp.334 = getv function %tmp.333 :getHeight;
+        %tmp.335 = invoke %tmp.333 %tmp.334();
+        %tmp.336 = 2;
+        %tmp.337 = div %tmp.335 %tmp.336;
+        symbol [ pix %tmp.339 101 31 34 ];
+        %tmp.339 = getv ? :pix;
+        %tmp.340 = 7;
+        %tmp.341 = mul %tmp.339 %tmp.340;
+        %tmp.342 = sub %tmp.337 %tmp.341;
+        symbol [ height %tmp.344 101 39 45 ];
+        %tmp.344 = getv ? :height;
+        %tmp.345 = sub %tmp.342 %tmp.344;
+        symbol [ Graphics %tmp.346 102 12 20 ];
+        %tmp.346 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.347 102 21 31 ];
+        %tmp.347 = getv %tmp.346 :FONT_XTINY;
+        %tmp.348 = lgetv %STP.7;
+        symbol [ STP %tmp.348 103 13 16 ];
+        symbol [ ActivityMonitor %tmp.350 103 17 32 ];
+        %tmp.350 = getv ? :ActivityMonitor;
+        symbol [ getInfo %tmp.351 103 33 40 ];
+        %tmp.351 = getv function %tmp.350 :getInfo;
+        %tmp.352 = invoke %tmp.350 %tmp.351();
+        symbol [ stepGoal %tmp.353 103 43 51 ];
+        %tmp.353 = getv %tmp.352 :stepGoal;
+        %tmp.354 = div %tmp.348 %tmp.353;
+        symbol [ toNumber %tmp.355 103 53 61 ];
+        %tmp.355 = getv function %tmp.354 :toNumber;
+        %tmp.356 = invoke %tmp.354 %tmp.355();
+        symbol [ format %tmp.357 103 64 70 ];
+        %tmp.357 = getv function %tmp.356 :format;
+        %tmp.358 = "%d";
+        %tmp.359 = invoke %tmp.356 %tmp.357(%tmp.358);
+        symbol [ Graphics %tmp.360 104 12 20 ];
+        %tmp.360 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.361 104 21 40 ];
+        %tmp.361 = getv %tmp.360 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.321 %tmp.322(%tmp.332, %tmp.345, %tmp.347, %tmp.359, %tmp.361);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 108 8 ]
+        %tmp.362 = lgetv %dc;
+        symbol [ dc %tmp.362 108 8 10 ];
+        symbol [ setColor %tmp.363 108 11 19 ];
+        %tmp.363 = getv function %tmp.362 :setColor;
+        symbol [ Graphics %tmp.364 108 20 28 ];
+        %tmp.364 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.365 108 29 41 ];
+        %tmp.365 = getv %tmp.364 :COLOR_YELLOW;
+        symbol [ Graphics %tmp.366 108 43 51 ];
+        %tmp.366 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.367 108 52 69 ];
+        %tmp.367 = getv %tmp.366 :COLOR_TRANSPARENT;
+        invoke %tmp.362 %tmp.363(%tmp.365, %tmp.367);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 109 8 ]
+        symbol [ pix %tmp.369 109 17 20 ];
+        %tmp.369 = getv ? :pix;
+        %tmp.370 = 2;
+        %tmp.371 = mul %tmp.369 %tmp.370;
+        %tmp.372 = lgetv %STR.8;
+        symbol [ STR %tmp.372 109 23 26 ];
+        %tmp.373 = mul %tmp.371 %tmp.372;
+        %tmp.374 = 100;
+        %tmp.375 = div %tmp.373 %tmp.374;
+        symbol [ height ? 109 8 14 ];
+        putv self :height %tmp.375;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 110 8 ]
+        %tmp.376 = lgetv %dc;
+        symbol [ dc %tmp.376 110 8 10 ];
+        symbol [ fillRectangle %tmp.377 110 11 24 ];
+        %tmp.377 = getv function %tmp.376 :fillRectangle;
+        %tmp.378 = lgetv %dc;
+        symbol [ dc %tmp.378 110 25 27 ];
+        symbol [ getWidth %tmp.379 110 28 36 ];
+        %tmp.379 = getv function %tmp.378 :getWidth;
+        %tmp.380 = invoke %tmp.378 %tmp.379();
+        %tmp.381 = 2;
+        %tmp.382 = div %tmp.380 %tmp.381;
+        symbol [ pix %tmp.384 110 43 46 ];
+        %tmp.384 = getv ? :pix;
+        %tmp.385 = 2;
+        %tmp.386 = mul %tmp.384 %tmp.385;
+        %tmp.387 = sub %tmp.382 %tmp.386;
+        %tmp.388 = lgetv %dc;
+        symbol [ dc %tmp.388 110 50 52 ];
+        symbol [ getHeight %tmp.389 110 53 62 ];
+        %tmp.389 = getv function %tmp.388 :getHeight;
+        %tmp.390 = invoke %tmp.388 %tmp.389();
+        %tmp.391 = 2;
+        %tmp.392 = div %tmp.390 %tmp.391;
+        symbol [ pix %tmp.394 110 69 72 ];
+        %tmp.394 = getv ? :pix;
+        %tmp.395 = 4.9;
+        %tmp.396 = mul %tmp.394 %tmp.395;
+        %tmp.397 = sub %tmp.392 %tmp.396;
+        symbol [ height %tmp.399 110 79 85 ];
+        %tmp.399 = getv ? :height;
+        %tmp.400 = sub %tmp.397 %tmp.399;
+        symbol [ pix %tmp.402 110 87 90 ];
+        %tmp.402 = getv ? :pix;
+        %tmp.403 = 2;
+        %tmp.404 = mul %tmp.402 %tmp.403;
+        symbol [ height %tmp.406 110 94 100 ];
+        %tmp.406 = getv ? :height;
+        invoke %tmp.376 %tmp.377(%tmp.387, %tmp.400, %tmp.404, %tmp.406);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 111 8 ]
+        %tmp.407 = lgetv %dc;
+        symbol [ dc %tmp.407 111 8 10 ];
+        symbol [ drawText %tmp.408 111 11 19 ];
+        %tmp.408 = getv function %tmp.407 :drawText;
+        %tmp.409 = lgetv %dc;
+        symbol [ dc %tmp.409 112 12 14 ];
+        symbol [ getWidth %tmp.410 112 15 23 ];
+        %tmp.410 = getv function %tmp.409 :getWidth;
+        %tmp.411 = invoke %tmp.409 %tmp.410();
+        %tmp.412 = 2;
+        %tmp.413 = div %tmp.411 %tmp.412;
+        symbol [ pix %tmp.415 112 30 33 ];
+        %tmp.415 = getv ? :pix;
+        %tmp.416 = 1;
+        %tmp.417 = mul %tmp.415 %tmp.416;
+        %tmp.418 = sub %tmp.413 %tmp.417;
+        %tmp.419 = lgetv %dc;
+        symbol [ dc %tmp.419 113 12 14 ];
+        symbol [ getHeight %tmp.420 113 15 24 ];
+        %tmp.420 = getv function %tmp.419 :getHeight;
+        %tmp.421 = invoke %tmp.419 %tmp.420();
+        %tmp.422 = 2;
+        %tmp.423 = div %tmp.421 %tmp.422;
+        symbol [ pix %tmp.425 113 31 34 ];
+        %tmp.425 = getv ? :pix;
+        %tmp.426 = 7;
+        %tmp.427 = mul %tmp.425 %tmp.426;
+        %tmp.428 = sub %tmp.423 %tmp.427;
+        symbol [ height %tmp.430 113 39 45 ];
+        %tmp.430 = getv ? :height;
+        %tmp.431 = sub %tmp.428 %tmp.430;
+        symbol [ Graphics %tmp.432 114 12 20 ];
+        %tmp.432 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.433 114 21 31 ];
+        %tmp.433 = getv %tmp.432 :FONT_XTINY;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_begin:
+        %tmp.434 = lgetv %STR.8;
+        symbol [ STR %tmp.434 115 13 16 ];
+        %tmp.435 = 0;
+        %tmp.436 = gt %tmp.434 %tmp.435;
+        bf %tmp.436 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_true:
+        %tmp.437 = lgetv %STR.8;
+        symbol [ STR %tmp.437 115 24 27 ];
+        symbol [ format %tmp.438 115 28 34 ];
+        %tmp.438 = getv function %tmp.437 :format;
+        %tmp.439 = "%d";
+        %tmp.440 = invoke %tmp.437 %tmp.438(%tmp.439);
+        push %tmp.440;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_else_false:
+        %tmp.441 = "-";
+        push %tmp.441;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_end:
+        %tmp.442 = phi [%tmp.436 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_begin] [%tmp.440 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_true] [%tmp.441 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_else_false] [%tmp.442 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_115_12_115_43_end];
+        symbol [ Graphics %tmp.443 116 12 20 ];
+        %tmp.443 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.444 116 21 40 ];
+        %tmp.444 = getv %tmp.443 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.407 %tmp.408(%tmp.418, %tmp.431, %tmp.433, %tmp.442, %tmp.444);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 120 8 ]
+        %tmp.445 = lgetv %dc;
+        symbol [ dc %tmp.445 120 8 10 ];
+        symbol [ setColor %tmp.446 120 11 19 ];
+        %tmp.446 = getv function %tmp.445 :setColor;
+        symbol [ Graphics %tmp.447 120 20 28 ];
+        %tmp.447 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_BLUE %tmp.448 120 29 42 ];
+        %tmp.448 = getv %tmp.447 :COLOR_DK_BLUE;
+        symbol [ Graphics %tmp.449 120 44 52 ];
+        %tmp.449 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.450 120 53 70 ];
+        %tmp.450 = getv %tmp.449 :COLOR_TRANSPARENT;
+        invoke %tmp.445 %tmp.446(%tmp.448, %tmp.450);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 121 8 ]
+        %tmp.451 = lgetv %CON.9;
+        symbol [ CON %tmp.451 121 17 20 ];
+        symbol [ height ? 121 8 14 ];
+        putv self :height %tmp.451;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 122 8 ]
+        %tmp.452 = lgetv %dc;
+        symbol [ dc %tmp.452 122 8 10 ];
+        symbol [ fillRectangle %tmp.453 122 11 24 ];
+        %tmp.453 = getv function %tmp.452 :fillRectangle;
+        %tmp.454 = lgetv %dc;
+        symbol [ dc %tmp.454 122 25 27 ];
+        symbol [ getWidth %tmp.455 122 28 36 ];
+        %tmp.455 = getv function %tmp.454 :getWidth;
+        %tmp.456 = invoke %tmp.454 %tmp.455();
+        %tmp.457 = 2;
+        %tmp.458 = div %tmp.456 %tmp.457;
+        symbol [ pix %tmp.460 122 43 46 ];
+        %tmp.460 = getv ? :pix;
+        %tmp.461 = 0;
+        %tmp.462 = mul %tmp.460 %tmp.461;
+        %tmp.463 = sub %tmp.458 %tmp.462;
+        %tmp.464 = lgetv %dc;
+        symbol [ dc %tmp.464 122 50 52 ];
+        symbol [ getHeight %tmp.465 122 53 62 ];
+        %tmp.465 = getv function %tmp.464 :getHeight;
+        %tmp.466 = invoke %tmp.464 %tmp.465();
+        %tmp.467 = 2;
+        %tmp.468 = div %tmp.466 %tmp.467;
+        symbol [ pix %tmp.470 122 69 72 ];
+        %tmp.470 = getv ? :pix;
+        %tmp.471 = 4.9;
+        %tmp.472 = mul %tmp.470 %tmp.471;
+        %tmp.473 = sub %tmp.468 %tmp.472;
+        symbol [ height %tmp.475 122 79 85 ];
+        %tmp.475 = getv ? :height;
+        %tmp.476 = sub %tmp.473 %tmp.475;
+        symbol [ pix %tmp.478 122 87 90 ];
+        %tmp.478 = getv ? :pix;
+        %tmp.479 = 2;
+        %tmp.480 = mul %tmp.478 %tmp.479;
+        symbol [ height %tmp.482 122 94 100 ];
+        %tmp.482 = getv ? :height;
+        invoke %tmp.452 %tmp.453(%tmp.463, %tmp.476, %tmp.480, %tmp.482);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 123 8 ]
+        %tmp.483 = lgetv %dc;
+        symbol [ dc %tmp.483 123 8 10 ];
+        symbol [ drawText %tmp.484 123 11 19 ];
+        %tmp.484 = getv function %tmp.483 :drawText;
+        %tmp.485 = lgetv %dc;
+        symbol [ dc %tmp.485 124 12 14 ];
+        symbol [ getWidth %tmp.486 124 15 23 ];
+        %tmp.486 = getv function %tmp.485 :getWidth;
+        %tmp.487 = invoke %tmp.485 %tmp.486();
+        %tmp.488 = 2;
+        %tmp.489 = div %tmp.487 %tmp.488;
+        symbol [ pix %tmp.491 124 30 33 ];
+        %tmp.491 = getv ? :pix;
+        %tmp.492 = -1;
+        %tmp.493 = mul %tmp.491 %tmp.492;
+        %tmp.494 = sub %tmp.489 %tmp.493;
+        %tmp.495 = lgetv %dc;
+        symbol [ dc %tmp.495 125 12 14 ];
+        symbol [ getHeight %tmp.496 125 15 24 ];
+        %tmp.496 = getv function %tmp.495 :getHeight;
+        %tmp.497 = invoke %tmp.495 %tmp.496();
+        %tmp.498 = 2;
+        %tmp.499 = div %tmp.497 %tmp.498;
+        symbol [ pix %tmp.501 125 31 34 ];
+        %tmp.501 = getv ? :pix;
+        %tmp.502 = 7;
+        %tmp.503 = mul %tmp.501 %tmp.502;
+        %tmp.504 = sub %tmp.499 %tmp.503;
+        symbol [ height %tmp.506 125 39 45 ];
+        %tmp.506 = getv ? :height;
+        %tmp.507 = sub %tmp.504 %tmp.506;
+        symbol [ Graphics %tmp.508 126 12 20 ];
+        %tmp.508 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.509 126 21 31 ];
+        %tmp.509 = getv %tmp.508 :FONT_XTINY;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_begin:
+        %tmp.510 = lgetv %CON.9;
+        symbol [ CON %tmp.510 127 13 16 ];
+        %tmp.511 = 0;
+        %tmp.512 = gt %tmp.510 %tmp.511;
+        bf %tmp.512 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_true:
+        %tmp.513 = "*";
+        push %tmp.513;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_else_false:
+        %tmp.514 = "";
+        push %tmp.514;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_end:
+        %tmp.515 = phi [%tmp.512 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_begin] [%tmp.513 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_true] [%tmp.514 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_else_false] [%tmp.515 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_127_12_127_30_end];
+        symbol [ Graphics %tmp.516 128 12 20 ];
+        %tmp.516 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.517 128 21 40 ];
+        %tmp.517 = getv %tmp.516 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.483 %tmp.484(%tmp.494, %tmp.507, %tmp.509, %tmp.515, %tmp.517);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 132 8 ]
+        %tmp.518 = lgetv %dc;
+        symbol [ dc %tmp.518 132 8 10 ];
+        symbol [ setColor %tmp.519 132 11 19 ];
+        %tmp.519 = getv function %tmp.518 :setColor;
+        symbol [ Graphics %tmp.520 132 20 28 ];
+        %tmp.520 = getm $.Toybox.Graphics;
+        symbol [ COLOR_PINK %tmp.521 132 29 39 ];
+        %tmp.521 = getv %tmp.520 :COLOR_PINK;
+        symbol [ Graphics %tmp.522 132 41 49 ];
+        %tmp.522 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.523 132 50 67 ];
+        %tmp.523 = getv %tmp.522 :COLOR_TRANSPARENT;
+        invoke %tmp.518 %tmp.519(%tmp.521, %tmp.523);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 133 8 ]
+        symbol [ pix %tmp.525 133 17 20 ];
+        %tmp.525 = getv ? :pix;
+        %tmp.526 = 3.3;
+        %tmp.527 = mul %tmp.525 %tmp.526;
+        %tmp.528 = lgetv %BAT.10;
+        symbol [ BAT %tmp.528 133 25 28 ];
+        %tmp.529 = mul %tmp.527 %tmp.528;
+        %tmp.530 = 100;
+        %tmp.531 = div %tmp.529 %tmp.530;
+        symbol [ height ? 133 8 14 ];
+        putv self :height %tmp.531;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 134 8 ]
+        %tmp.532 = lgetv %dc;
+        symbol [ dc %tmp.532 134 8 10 ];
+        symbol [ fillRectangle %tmp.533 134 11 24 ];
+        %tmp.533 = getv function %tmp.532 :fillRectangle;
+        %tmp.534 = lgetv %dc;
+        symbol [ dc %tmp.534 134 25 27 ];
+        symbol [ getWidth %tmp.535 134 28 36 ];
+        %tmp.535 = getv function %tmp.534 :getWidth;
+        %tmp.536 = invoke %tmp.534 %tmp.535();
+        %tmp.537 = 2;
+        %tmp.538 = div %tmp.536 %tmp.537;
+        symbol [ pix %tmp.540 134 43 46 ];
+        %tmp.540 = getv ? :pix;
+        %tmp.541 = -2;
+        %tmp.542 = mul %tmp.540 %tmp.541;
+        %tmp.543 = sub %tmp.538 %tmp.542;
+        %tmp.544 = lgetv %dc;
+        symbol [ dc %tmp.544 134 51 53 ];
+        symbol [ getHeight %tmp.545 134 54 63 ];
+        %tmp.545 = getv function %tmp.544 :getHeight;
+        %tmp.546 = invoke %tmp.544 %tmp.545();
+        %tmp.547 = 2;
+        %tmp.548 = div %tmp.546 %tmp.547;
+        symbol [ pix %tmp.550 134 70 73 ];
+        %tmp.550 = getv ? :pix;
+        %tmp.551 = 4.9;
+        %tmp.552 = mul %tmp.550 %tmp.551;
+        %tmp.553 = sub %tmp.548 %tmp.552;
+        symbol [ height %tmp.555 134 80 86 ];
+        %tmp.555 = getv ? :height;
+        %tmp.556 = sub %tmp.553 %tmp.555;
+        symbol [ pix %tmp.558 134 88 91 ];
+        %tmp.558 = getv ? :pix;
+        %tmp.559 = 2;
+        %tmp.560 = mul %tmp.558 %tmp.559;
+        symbol [ height %tmp.562 134 95 101 ];
+        %tmp.562 = getv ? :height;
+        invoke %tmp.532 %tmp.533(%tmp.543, %tmp.556, %tmp.560, %tmp.562);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 135 8 ]
+        %tmp.563 = lgetv %dc;
+        symbol [ dc %tmp.563 135 8 10 ];
+        symbol [ drawText %tmp.564 135 11 19 ];
+        %tmp.564 = getv function %tmp.563 :drawText;
+        %tmp.565 = lgetv %dc;
+        symbol [ dc %tmp.565 136 12 14 ];
+        symbol [ getWidth %tmp.566 136 15 23 ];
+        %tmp.566 = getv function %tmp.565 :getWidth;
+        %tmp.567 = invoke %tmp.565 %tmp.566();
+        %tmp.568 = 2;
+        %tmp.569 = div %tmp.567 %tmp.568;
+        symbol [ pix %tmp.571 136 30 33 ];
+        %tmp.571 = getv ? :pix;
+        %tmp.572 = -3;
+        %tmp.573 = mul %tmp.571 %tmp.572;
+        %tmp.574 = sub %tmp.569 %tmp.573;
+        %tmp.575 = lgetv %dc;
+        symbol [ dc %tmp.575 137 12 14 ];
+        symbol [ getHeight %tmp.576 137 15 24 ];
+        %tmp.576 = getv function %tmp.575 :getHeight;
+        %tmp.577 = invoke %tmp.575 %tmp.576();
+        %tmp.578 = 2;
+        %tmp.579 = div %tmp.577 %tmp.578;
+        symbol [ pix %tmp.581 137 31 34 ];
+        %tmp.581 = getv ? :pix;
+        %tmp.582 = 7;
+        %tmp.583 = mul %tmp.581 %tmp.582;
+        %tmp.584 = sub %tmp.579 %tmp.583;
+        symbol [ height %tmp.586 137 39 45 ];
+        %tmp.586 = getv ? :height;
+        %tmp.587 = sub %tmp.584 %tmp.586;
+        symbol [ Graphics %tmp.588 138 12 20 ];
+        %tmp.588 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.589 138 21 31 ];
+        %tmp.589 = getv %tmp.588 :FONT_XTINY;
+        %tmp.590 = lgetv %BAT.10;
+        symbol [ BAT %tmp.590 139 12 15 ];
+        symbol [ format %tmp.591 139 16 22 ];
+        %tmp.591 = getv function %tmp.590 :format;
+        %tmp.592 = "%d";
+        %tmp.593 = invoke %tmp.590 %tmp.591(%tmp.592);
+        symbol [ Graphics %tmp.594 140 12 20 ];
+        %tmp.594 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.595 140 21 40 ];
+        %tmp.595 = getv %tmp.594 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.563 %tmp.564(%tmp.574, %tmp.587, %tmp.589, %tmp.593, %tmp.595);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 144 8 ]
+        %tmp.596 = lgetv %dc;
+        symbol [ dc %tmp.596 144 8 10 ];
+        symbol [ setColor %tmp.597 144 11 19 ];
+        %tmp.597 = getv function %tmp.596 :setColor;
+        symbol [ Graphics %tmp.598 144 20 28 ];
+        %tmp.598 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.599 144 29 39 ];
+        %tmp.599 = getv %tmp.598 :COLOR_BLUE;
+        symbol [ Graphics %tmp.600 144 41 49 ];
+        %tmp.600 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.601 144 50 67 ];
+        %tmp.601 = getv %tmp.600 :COLOR_TRANSPARENT;
+        invoke %tmp.596 %tmp.597(%tmp.599, %tmp.601);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 145 8 ]
+        symbol [ pix %tmp.603 145 17 20 ];
+        %tmp.603 = getv ? :pix;
+        %tmp.604 = 2.5;
+        %tmp.605 = mul %tmp.603 %tmp.604;
+        %tmp.606 = lgetv %BOD.11;
+        symbol [ BOD %tmp.606 145 25 28 ];
+        %tmp.607 = mul %tmp.605 %tmp.606;
+        %tmp.608 = 100;
+        %tmp.609 = div %tmp.607 %tmp.608;
+        symbol [ height ? 145 8 14 ];
+        putv self :height %tmp.609;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 146 8 ]
+        %tmp.610 = lgetv %dc;
+        symbol [ dc %tmp.610 146 8 10 ];
+        symbol [ fillRectangle %tmp.611 146 11 24 ];
+        %tmp.611 = getv function %tmp.610 :fillRectangle;
+        %tmp.612 = lgetv %dc;
+        symbol [ dc %tmp.612 146 25 27 ];
+        symbol [ getWidth %tmp.613 146 28 36 ];
+        %tmp.613 = getv function %tmp.612 :getWidth;
+        %tmp.614 = invoke %tmp.612 %tmp.613();
+        %tmp.615 = 2;
+        %tmp.616 = div %tmp.614 %tmp.615;
+        symbol [ pix %tmp.618 146 43 46 ];
+        %tmp.618 = getv ? :pix;
+        %tmp.619 = -4;
+        %tmp.620 = mul %tmp.618 %tmp.619;
+        %tmp.621 = sub %tmp.616 %tmp.620;
+        %tmp.622 = lgetv %dc;
+        symbol [ dc %tmp.622 146 51 53 ];
+        symbol [ getHeight %tmp.623 146 54 63 ];
+        %tmp.623 = getv function %tmp.622 :getHeight;
+        %tmp.624 = invoke %tmp.622 %tmp.623();
+        %tmp.625 = 2;
+        %tmp.626 = div %tmp.624 %tmp.625;
+        symbol [ pix %tmp.628 146 70 73 ];
+        %tmp.628 = getv ? :pix;
+        %tmp.629 = 4.9;
+        %tmp.630 = mul %tmp.628 %tmp.629;
+        %tmp.631 = sub %tmp.626 %tmp.630;
+        symbol [ height %tmp.633 146 80 86 ];
+        %tmp.633 = getv ? :height;
+        %tmp.634 = sub %tmp.631 %tmp.633;
+        symbol [ pix %tmp.636 146 88 91 ];
+        %tmp.636 = getv ? :pix;
+        %tmp.637 = 2;
+        %tmp.638 = mul %tmp.636 %tmp.637;
+        symbol [ height %tmp.640 146 95 101 ];
+        %tmp.640 = getv ? :height;
+        invoke %tmp.610 %tmp.611(%tmp.621, %tmp.634, %tmp.638, %tmp.640);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 147 8 ]
+        %tmp.641 = lgetv %dc;
+        symbol [ dc %tmp.641 147 8 10 ];
+        symbol [ drawText %tmp.642 147 11 19 ];
+        %tmp.642 = getv function %tmp.641 :drawText;
+        %tmp.643 = lgetv %dc;
+        symbol [ dc %tmp.643 148 12 14 ];
+        symbol [ getWidth %tmp.644 148 15 23 ];
+        %tmp.644 = getv function %tmp.643 :getWidth;
+        %tmp.645 = invoke %tmp.643 %tmp.644();
+        %tmp.646 = 2;
+        %tmp.647 = div %tmp.645 %tmp.646;
+        symbol [ pix %tmp.649 148 30 33 ];
+        %tmp.649 = getv ? :pix;
+        %tmp.650 = -5;
+        %tmp.651 = mul %tmp.649 %tmp.650;
+        %tmp.652 = sub %tmp.647 %tmp.651;
+        %tmp.653 = lgetv %dc;
+        symbol [ dc %tmp.653 149 12 14 ];
+        symbol [ getHeight %tmp.654 149 15 24 ];
+        %tmp.654 = getv function %tmp.653 :getHeight;
+        %tmp.655 = invoke %tmp.653 %tmp.654();
+        %tmp.656 = 2;
+        %tmp.657 = div %tmp.655 %tmp.656;
+        symbol [ pix %tmp.659 149 31 34 ];
+        %tmp.659 = getv ? :pix;
+        %tmp.660 = 7;
+        %tmp.661 = mul %tmp.659 %tmp.660;
+        %tmp.662 = sub %tmp.657 %tmp.661;
+        symbol [ height %tmp.664 149 39 45 ];
+        %tmp.664 = getv ? :height;
+        %tmp.665 = sub %tmp.662 %tmp.664;
+        symbol [ Graphics %tmp.666 150 12 20 ];
+        %tmp.666 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.667 150 21 31 ];
+        %tmp.667 = getv %tmp.666 :FONT_XTINY;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_begin:
+        %tmp.668 = lgetv %BOD.11;
+        symbol [ BOD %tmp.668 151 13 16 ];
+        %tmp.669 = 0;
+        %tmp.670 = gt %tmp.668 %tmp.669;
+        bf %tmp.670 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_true:
+        %tmp.671 = lgetv %BOD.11;
+        symbol [ BOD %tmp.671 151 24 27 ];
+        symbol [ format %tmp.672 151 28 34 ];
+        %tmp.672 = getv function %tmp.671 :format;
+        %tmp.673 = "%2d";
+        %tmp.674 = invoke %tmp.671 %tmp.672(%tmp.673);
+        push %tmp.674;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_else_false:
+        %tmp.675 = "-";
+        push %tmp.675;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_end:
+        %tmp.676 = phi [%tmp.670 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_begin] [%tmp.674 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_true] [%tmp.675 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_else_false] [%tmp.676 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_151_12_151_44_end];
+        symbol [ Graphics %tmp.677 152 12 20 ];
+        %tmp.677 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.678 152 21 40 ];
+        %tmp.678 = getv %tmp.677 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.641 %tmp.642(%tmp.652, %tmp.665, %tmp.667, %tmp.676, %tmp.678);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 156 8 ]
+        %tmp.679 = lgetv %dc;
+        symbol [ dc %tmp.679 156 8 10 ];
+        symbol [ setColor %tmp.680 156 11 19 ];
+        %tmp.680 = getv function %tmp.679 :setColor;
+        symbol [ Graphics %tmp.681 156 20 28 ];
+        %tmp.681 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.682 156 29 40 ];
+        %tmp.682 = getv %tmp.681 :COLOR_WHITE;
+        symbol [ Graphics %tmp.683 156 42 50 ];
+        %tmp.683 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.684 156 51 68 ];
+        %tmp.684 = getv %tmp.683 :COLOR_TRANSPARENT;
+        invoke %tmp.679 %tmp.680(%tmp.682, %tmp.684);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 157 8 ]
+        %tmp.685 = 0;
+        symbol [ height ? 157 8 14 ];
+        putv self :height %tmp.685;
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 158 8 ]
+        %tmp.686 = lgetv %dc;
+        symbol [ dc %tmp.686 158 8 10 ];
+        symbol [ fillRectangle %tmp.687 158 11 24 ];
+        %tmp.687 = getv function %tmp.686 :fillRectangle;
+        %tmp.688 = lgetv %dc;
+        symbol [ dc %tmp.688 158 25 27 ];
+        symbol [ getWidth %tmp.689 158 28 36 ];
+        %tmp.689 = getv function %tmp.688 :getWidth;
+        %tmp.690 = invoke %tmp.688 %tmp.689();
+        %tmp.691 = 2;
+        %tmp.692 = div %tmp.690 %tmp.691;
+        symbol [ pix %tmp.694 158 43 46 ];
+        %tmp.694 = getv ? :pix;
+        %tmp.695 = -6;
+        %tmp.696 = mul %tmp.694 %tmp.695;
+        %tmp.697 = sub %tmp.692 %tmp.696;
+        %tmp.698 = lgetv %dc;
+        symbol [ dc %tmp.698 158 51 53 ];
+        symbol [ getHeight %tmp.699 158 54 63 ];
+        %tmp.699 = getv function %tmp.698 :getHeight;
+        %tmp.700 = invoke %tmp.698 %tmp.699();
+        %tmp.701 = 2;
+        %tmp.702 = div %tmp.700 %tmp.701;
+        symbol [ pix %tmp.704 158 70 73 ];
+        %tmp.704 = getv ? :pix;
+        %tmp.705 = 4.9;
+        %tmp.706 = mul %tmp.704 %tmp.705;
+        %tmp.707 = sub %tmp.702 %tmp.706;
+        symbol [ height %tmp.709 158 80 86 ];
+        %tmp.709 = getv ? :height;
+        %tmp.710 = sub %tmp.707 %tmp.709;
+        symbol [ pix %tmp.712 158 88 91 ];
+        %tmp.712 = getv ? :pix;
+        %tmp.713 = 2;
+        %tmp.714 = mul %tmp.712 %tmp.713;
+        symbol [ height %tmp.716 158 95 101 ];
+        %tmp.716 = getv ? :height;
+        invoke %tmp.686 %tmp.687(%tmp.697, %tmp.710, %tmp.714, %tmp.716);
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 159 8 ]
+        %tmp.717 = lgetv %dc;
+        symbol [ dc %tmp.717 159 8 10 ];
+        symbol [ drawText %tmp.718 159 11 19 ];
+        %tmp.718 = getv function %tmp.717 :drawText;
+        %tmp.719 = lgetv %dc;
+        symbol [ dc %tmp.719 160 12 14 ];
+        symbol [ getWidth %tmp.720 160 15 23 ];
+        %tmp.720 = getv function %tmp.719 :getWidth;
+        %tmp.721 = invoke %tmp.719 %tmp.720();
+        %tmp.722 = 2;
+        %tmp.723 = div %tmp.721 %tmp.722;
+        symbol [ pix %tmp.725 160 30 33 ];
+        %tmp.725 = getv ? :pix;
+        %tmp.726 = -7;
+        %tmp.727 = mul %tmp.725 %tmp.726;
+        %tmp.728 = sub %tmp.723 %tmp.727;
+        %tmp.729 = lgetv %dc;
+        symbol [ dc %tmp.729 161 12 14 ];
+        symbol [ getHeight %tmp.730 161 15 24 ];
+        %tmp.730 = getv function %tmp.729 :getHeight;
+        %tmp.731 = invoke %tmp.729 %tmp.730();
+        %tmp.732 = 2;
+        %tmp.733 = div %tmp.731 %tmp.732;
+        symbol [ pix %tmp.735 161 31 34 ];
+        %tmp.735 = getv ? :pix;
+        %tmp.736 = 7;
+        %tmp.737 = mul %tmp.735 %tmp.736;
+        %tmp.738 = sub %tmp.733 %tmp.737;
+        symbol [ height %tmp.740 161 39 45 ];
+        %tmp.740 = getv ? :height;
+        %tmp.741 = sub %tmp.738 %tmp.740;
+        symbol [ Graphics %tmp.742 162 12 20 ];
+        %tmp.742 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.743 162 21 31 ];
+        %tmp.743 = getv %tmp.742 :FONT_XTINY;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_begin:
+        %tmp.744 = lgetv %NOT.12;
+        symbol [ NOT %tmp.744 163 13 16 ];
+        %tmp.745 = 0;
+        %tmp.746 = gt %tmp.744 %tmp.745;
+        bf %tmp.746 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_else_false;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_true:
+        %tmp.747 = lgetv %NOT.12;
+        symbol [ NOT %tmp.747 163 24 27 ];
+        push %tmp.747;
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_else_false:
+        %tmp.748 = "";
+        push %tmp.748;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_end:
+        %tmp.749 = phi [%tmp.746 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_begin] [%tmp.747 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_true] [%tmp.748 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_else_false] [%tmp.749 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_163_12_163_30_end];
+        symbol [ Graphics %tmp.750 164 12 20 ];
+        %tmp.750 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.751 164 21 40 ];
+        %tmp.751 = getv %tmp.750 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.717 %tmp.718(%tmp.728, %tmp.741, %tmp.743, %tmp.749, %tmp.751);
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_33_26_166_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 168; @symbol_functiondef = [getStressIterator,168,13,30]; ]
+    function getStressIterator() {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_168_33_173_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 169 8 ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_8_171_8_if_stmt:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_12_169_86_begin:
+        symbol [ Toybox %tmp.2 169 13 19 ];
+        %tmp.2 = getv ? :Toybox;
+        %tmp.4 = const :SensorHistory;
+        symbol [ SensorHistory %tmp.4 169 25 38 const ];
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        bf %tmp.5 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_8_171_8_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_43_169_86_true:
+        symbol [ Toybox %tmp.7 169 44 50 ];
+        %tmp.7 = getv ? :Toybox;
+        %tmp.8 = as %tmp.7 { (interface { var SensorHistory; }) };
+        symbol [ SensorHistory %tmp.9 169 51 64 ];
+        %tmp.9 = getv %tmp.8 :SensorHistory;
+        %tmp.11 = const :getStressHistory;
+        symbol [ getStressHistory %tmp.11 169 70 86 const ];
+        %tmp.12 = canhazplz %tmp.9 %tmp.11;
+        push %tmp.12;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_43_169_86_end:
+        %tmp.13 = phi [%tmp.5 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_12_169_86_begin] [%tmp.12 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_43_169_86_true] [%tmp.13 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_43_169_86_end];
+        bf %tmp.13 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_8_171_8_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_8_171_8_if_true:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_89_171_8_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 170 12 ]
+        symbol [ Toybox %tmp.15 170 19 25 ];
+        %tmp.15 = getv ? :Toybox;
+        %tmp.16 = as %tmp.15 { (interface { var SensorHistory; }) };
+        symbol [ SensorHistory %tmp.17 170 26 39 ];
+        %tmp.17 = getv %tmp.16 :SensorHistory;
+        symbol [ getStressHistory %tmp.18 170 40 56 ];
+        %tmp.18 = getv function %tmp.17 :getStressHistory;
+        %tmp.19 = newd 2;
+        %tmp.21 = const :period;
+        symbol [ period %tmp.21 170 60 66 const ];
+        %tmp.22 = 1;
+        %tmp.23 = dup %tmp.19;
+        %tmp.24 = aputv %tmp.23 %tmp.21 %tmp.22;
+        %tmp.26 = const :order;
+        symbol [ order %tmp.26 170 74 79 const ];
+        symbol [ Toybox %tmp.28 170 83 89 ];
+        %tmp.28 = getv ? :Toybox;
+        %tmp.29 = as %tmp.28 { (interface { var SensorHistory; }) };
+        symbol [ SensorHistory %tmp.30 170 90 103 ];
+        %tmp.30 = getv %tmp.29 :SensorHistory;
+        symbol [ ORDER_NEWEST_FIRST %tmp.31 170 104 122 ];
+        %tmp.31 = getv %tmp.30 :ORDER_NEWEST_FIRST;
+        %tmp.32 = dup %tmp.24;
+        %tmp.33 = aputv %tmp.32 %tmp.26 %tmp.31;
+        %tmp.34 = invoke %tmp.17 %tmp.18(%tmp.33);
+        ret %tmp.34;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_89_171_8_stop:
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_8_171_8_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_169_8_171_8_if_end:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 172 8 ]
+        %tmp.35 = null;
+        ret %tmp.35;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_168_33_173_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 175; @symbol_functiondef = [getStress,175,13,22]; @symbol_return<0> = [Number,175,28,34]; ]
+    function getStress() as Number {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_175_35_185_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 176 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_175_35_185_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_175_35_185_4_stop" ]
+        %strIterator.1 = local;
+        symbol [ strIterator %strIterator.1 176 12 23 ];
+        %tmp.1 = self;
+        symbol [ getStressIterator %tmp.2 176 26 43 ];
+        %tmp.2 = getv function %tmp.1 :getStressIterator;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %strIterator.1 %tmp.3;
+        symbol [ strIterator %strIterator.1 176 12 23 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 177 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_175_35_185_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_175_35_185_4_stop" ]
+        %sample.2 = local;
+        symbol [ sample %sample.2 177 12 18 ];
+        %tmp.4 = lgetv %strIterator.1;
+        symbol [ strIterator %tmp.4 177 21 32 ];
+        symbol [ next %tmp.5 177 33 37 ];
+        %tmp.5 = getv function %tmp.4 :next;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %sample.2 %tmp.6;
+        symbol [ sample %sample.2 177 12 18 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 178 8 ]
+        while @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_178_8_183_8_while_test @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_178_8_183_8_while_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_178_8_183_8_while_test:
+        %tmp.7 = lgetv %sample.2;
+        symbol [ sample %tmp.7 178 15 21 ];
+        %tmp.8 = null;
+        %tmp.9 = ne %tmp.7 %tmp.8;
+        bf %tmp.9 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_178_8_183_8_while_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_178_8_183_8_while_begin:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_178_31_183_8_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 179 12 ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_179_12_181_12_if_stmt:
+        %tmp.10 = lgetv %sample.2;
+        symbol [ sample %tmp.10 179 16 22 ];
+        %tmp.11 = as %tmp.10 { (!Null) };
+        symbol [ data %tmp.12 179 23 27 ];
+        %tmp.12 = getv %tmp.11 :data;
+        %tmp.13 = null;
+        %tmp.14 = ne %tmp.12 %tmp.13;
+        bf %tmp.14 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_179_12_181_12_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_179_12_181_12_if_true:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_179_37_181_12_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 180 16 ]
+        %tmp.15 = lgetv %sample.2;
+        symbol [ sample %tmp.15 180 23 29 ];
+        %tmp.16 = as %tmp.15 { (!Null) };
+        symbol [ data %tmp.17 180 30 34 ];
+        %tmp.17 = getv %tmp.16 :data;
+        ret %tmp.17;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_179_37_181_12_stop:
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_179_12_181_12_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_179_12_181_12_if_end:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 182 12 ]
+        %tmp.18 = lgetv %strIterator.1;
+        symbol [ strIterator %tmp.18 182 21 32 ];
+        symbol [ next %tmp.19 182 33 37 ];
+        %tmp.19 = getv function %tmp.18 :next;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %sample.2 %tmp.20;
+        symbol [ sample %sample.2 182 12 18 ];
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_178_31_183_8_stop:
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_178_8_183_8_while_test;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_178_8_183_8_while_end:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 184 8 ]
+        %tmp.21 = -1;
+        ret %tmp.21;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_175_35_185_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 187; @symbol_functiondef = [getBodyBatteryIterator,187,13,35]; ]
+    function getBodyBatteryIterator() {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_187_38_192_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 188 8 ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_8_190_8_if_stmt:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_12_188_91_begin:
+        symbol [ Toybox %tmp.2 188 13 19 ];
+        %tmp.2 = getv ? :Toybox;
+        %tmp.4 = const :SensorHistory;
+        symbol [ SensorHistory %tmp.4 188 25 38 const ];
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        bf %tmp.5 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_8_190_8_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_43_188_91_true:
+        symbol [ Toybox %tmp.7 188 44 50 ];
+        %tmp.7 = getv ? :Toybox;
+        %tmp.8 = as %tmp.7 { (interface { var SensorHistory; }) };
+        symbol [ SensorHistory %tmp.9 188 51 64 ];
+        %tmp.9 = getv %tmp.8 :SensorHistory;
+        %tmp.11 = const :getBodyBatteryHistory;
+        symbol [ getBodyBatteryHistory %tmp.11 188 70 91 const ];
+        %tmp.12 = canhazplz %tmp.9 %tmp.11;
+        push %tmp.12;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_43_188_91_end:
+        %tmp.13 = phi [%tmp.5 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_12_188_91_begin] [%tmp.12 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_43_188_91_true] [%tmp.13 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_43_188_91_end];
+        bf %tmp.13 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_8_190_8_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_8_190_8_if_true:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_94_190_8_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 189 12 ]
+        symbol [ Toybox %tmp.15 189 19 25 ];
+        %tmp.15 = getv ? :Toybox;
+        %tmp.16 = as %tmp.15 { (interface { var SensorHistory; }) };
+        symbol [ SensorHistory %tmp.17 189 26 39 ];
+        %tmp.17 = getv %tmp.16 :SensorHistory;
+        symbol [ getBodyBatteryHistory %tmp.18 189 40 61 ];
+        %tmp.18 = getv function %tmp.17 :getBodyBatteryHistory;
+        %tmp.19 = newd 2;
+        %tmp.21 = const :period;
+        symbol [ period %tmp.21 189 65 71 const ];
+        %tmp.22 = 1;
+        %tmp.23 = dup %tmp.19;
+        %tmp.24 = aputv %tmp.23 %tmp.21 %tmp.22;
+        %tmp.26 = const :order;
+        symbol [ order %tmp.26 189 79 84 const ];
+        symbol [ Toybox %tmp.28 189 88 94 ];
+        %tmp.28 = getv ? :Toybox;
+        %tmp.29 = as %tmp.28 { (interface { var SensorHistory; }) };
+        symbol [ SensorHistory %tmp.30 189 95 108 ];
+        %tmp.30 = getv %tmp.29 :SensorHistory;
+        symbol [ ORDER_NEWEST_FIRST %tmp.31 189 109 127 ];
+        %tmp.31 = getv %tmp.30 :ORDER_NEWEST_FIRST;
+        %tmp.32 = dup %tmp.24;
+        %tmp.33 = aputv %tmp.32 %tmp.26 %tmp.31;
+        %tmp.34 = invoke %tmp.17 %tmp.18(%tmp.33);
+        ret %tmp.34;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_94_190_8_stop:
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_8_190_8_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_188_8_190_8_if_end:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 191 8 ]
+        %tmp.35 = null;
+        ret %tmp.35;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_187_38_192_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 194; @symbol_functiondef = [getBodyBattery,194,13,27]; @symbol_return<0> = [Number,194,33,39]; ]
+    function getBodyBattery() as Number or Null {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_194_48_204_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 195 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_194_48_204_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_194_48_204_4_stop" ]
+        %bbIterator.1 = local;
+        symbol [ bbIterator %bbIterator.1 195 12 22 ];
+        %tmp.1 = self;
+        symbol [ getBodyBatteryIterator %tmp.2 195 25 47 ];
+        %tmp.2 = getv function %tmp.1 :getBodyBatteryIterator;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %bbIterator.1 %tmp.3;
+        symbol [ bbIterator %bbIterator.1 195 12 22 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 196 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_194_48_204_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_194_48_204_4_stop" ]
+        %sample.2 = local;
+        symbol [ sample %sample.2 196 12 18 ];
+        %tmp.4 = lgetv %bbIterator.1;
+        symbol [ bbIterator %tmp.4 196 21 31 ];
+        symbol [ next %tmp.5 196 32 36 ];
+        %tmp.5 = getv function %tmp.4 :next;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %sample.2 %tmp.6;
+        symbol [ sample %sample.2 196 12 18 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 197 8 ]
+        while @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_197_8_202_8_while_test @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_197_8_202_8_while_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_197_8_202_8_while_test:
+        %tmp.7 = lgetv %sample.2;
+        symbol [ sample %tmp.7 197 15 21 ];
+        %tmp.8 = null;
+        %tmp.9 = ne %tmp.7 %tmp.8;
+        bf %tmp.9 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_197_8_202_8_while_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_197_8_202_8_while_begin:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_197_31_202_8_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 198 12 ]
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_198_12_200_12_if_stmt:
+        %tmp.10 = lgetv %sample.2;
+        symbol [ sample %tmp.10 198 16 22 ];
+        %tmp.11 = as %tmp.10 { (!Null) };
+        symbol [ data %tmp.12 198 23 27 ];
+        %tmp.12 = getv %tmp.11 :data;
+        %tmp.13 = null;
+        %tmp.14 = ne %tmp.12 %tmp.13;
+        bf %tmp.14 @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_198_12_200_12_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_198_12_200_12_if_true:
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_198_37_200_12_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 199 16 ]
+        %tmp.15 = lgetv %sample.2;
+        symbol [ sample %tmp.15 199 23 29 ];
+        %tmp.16 = as %tmp.15 { (!Null) };
+        symbol [ data %tmp.17 199 30 34 ];
+        %tmp.17 = getv %tmp.16 :data;
+        ret %tmp.17;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_198_37_200_12_stop:
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_198_12_200_12_if_end;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_198_12_200_12_if_end:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 201 12 ]
+        %tmp.18 = lgetv %bbIterator.1;
+        symbol [ bbIterator %tmp.18 201 21 31 ];
+        symbol [ next %tmp.19 201 32 36 ];
+        %tmp.19 = getv function %tmp.18 :next;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %sample.2 %tmp.20;
+        symbol [ sample %sample.2 201 12 18 ];
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_197_31_202_8_stop:
+        goto @C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_197_8_202_8_while_test;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_197_8_202_8_while_end:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 203 8 ]
+        %tmp.21 = -1;
+        ret %tmp.21;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_194_48_204_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 206; @symbol_functiondef = [getTime,206,13,20]; @symbol_return<0> = [String,206,26,32]; ]
+    function getTime() as String {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_206_33_210_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 207 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_206_33_210_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_206_33_210_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 207 12 21 ];
+        symbol [ System %tmp.1 207 24 30 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 207 31 43 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+        symbol [ clockTime %clockTime.1 207 12 21 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 208 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_206_33_210_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_206_33_210_4_stop" ]
+        %timeString.2 = local;
+        symbol [ timeString %timeString.2 208 12 22 ];
+        symbol [ Lang %tmp.4 208 25 29 ];
+        %tmp.4 = getm $.Toybox.Lang;
+        symbol [ format %tmp.5 208 30 36 ];
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "$1$:$2$";
+        %tmp.7 = newa 2;
+        %tmp.8 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.8 208 49 58 ];
+        symbol [ hour %tmp.9 208 59 63 ];
+        %tmp.9 = getv %tmp.8 :hour;
+        symbol [ format %tmp.10 208 64 70 ];
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "%02d";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        %tmp.13 = dup %tmp.7;
+        %tmp.14 = aputv %tmp.13 0 %tmp.12;
+        %tmp.15 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.15 208 80 89 ];
+        symbol [ min %tmp.16 208 90 93 ];
+        %tmp.16 = getv %tmp.15 :min;
+        symbol [ format %tmp.17 208 94 100 ];
+        %tmp.17 = getv function %tmp.16 :format;
+        %tmp.18 = "%02d";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        %tmp.20 = dup %tmp.14;
+        %tmp.21 = aputv %tmp.20 1 %tmp.19;
+        %tmp.22 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.21);
+        lputv %timeString.2 %tmp.22;
+        symbol [ timeString %timeString.2 208 12 22 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 209 8 ]
+        %tmp.23 = lgetv %timeString.2;
+        symbol [ timeString %tmp.23 209 15 25 ];
+        ret %tmp.23;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_206_33_210_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 212; @symbol_functiondef = [getDate,212,13,20]; @symbol_return<0> = [String,212,26,32]; ]
+    function getDate() as String {
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_212_33_216_4_start:
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 213 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_212_33_216_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_212_33_216_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 213 12 15 ];
+        symbol [ Gregorian %tmp.1 213 18 27 ];
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.2 213 28 32 ];
+        %tmp.2 = getv function %tmp.1 :info;
+        symbol [ Time %tmp.3 213 33 37 ];
+        %tmp.3 = getm $.Toybox.Time;
+        symbol [ now %tmp.4 213 38 41 ];
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        symbol [ Time %tmp.6 213 45 49 ];
+        %tmp.6 = getm $.Toybox.Time;
+        symbol [ FORMAT_MEDIUM %tmp.7 213 50 63 ];
+        %tmp.7 = getv %tmp.6 :FORMAT_MEDIUM;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        lputv %now.1 %tmp.8;
+        symbol [ now %now.1 213 12 15 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 214 8 ]
+        [ "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_212_33_216_4_start" "C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_212_33_216_4_stop" ]
+        %dateString.2 = local;
+        symbol [ dateString %dateString.2 214 12 22 ];
+        symbol [ Lang %tmp.9 214 25 29 ];
+        %tmp.9 = getm $.Toybox.Lang;
+        symbol [ format %tmp.10 214 30 36 ];
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "$1$, $2$ $3$";
+        %tmp.12 = newa 3;
+        %tmp.13 = lgetv %now.1;
+        symbol [ now %tmp.13 214 54 57 ];
+        symbol [ day_of_week %tmp.14 214 58 69 ];
+        %tmp.14 = getv %tmp.13 :day_of_week;
+        %tmp.15 = dup %tmp.12;
+        %tmp.16 = aputv %tmp.15 0 %tmp.14;
+        %tmp.17 = lgetv %now.1;
+        symbol [ now %tmp.17 214 71 74 ];
+        symbol [ month %tmp.18 214 75 80 ];
+        %tmp.18 = getv %tmp.17 :month;
+        %tmp.19 = dup %tmp.16;
+        %tmp.20 = aputv %tmp.19 1 %tmp.18;
+        %tmp.21 = lgetv %now.1;
+        symbol [ now %tmp.21 214 82 85 ];
+        symbol [ day %tmp.22 214 86 89 ];
+        %tmp.22 = getv %tmp.21 :day;
+        %tmp.23 = dup %tmp.20;
+        %tmp.24 = aputv %tmp.23 2 %tmp.22;
+        %tmp.25 = invoke %tmp.9 %tmp.10(%tmp.11, %tmp.24);
+        lputv %dateString.2 %tmp.25;
+        symbol [ dateString %dateString.2 214 12 22 ];
+[ "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc" 215 8 ]
+        %tmp.26 = lgetv %dateString.2;
+        symbol [ dateString %tmp.26 215 15 25 ];
+        ret %tmp.26;
+C__Users_igork_OneDrive_Documents_Code_Garmin_Forerunner_55_Simple8BitRetro_source_Simple8BitRetroView_mc_212_33_216_4_stop:
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 221; @symbol_functiondef = [onHide,221,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 225; @symbol_functiondef = [onExitSleep,225,13,24]; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 229; @symbol_functiondef = [onEnterSleep,229,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "C:\Users\igork\OneDrive\Documents\Code\Garmin-Forerunner-55\Simple8BitRetro\source\Simple8BitRetroView.mc"; @line = 1; ]
+<init> {
+}
