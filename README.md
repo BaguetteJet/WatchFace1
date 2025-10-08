@@ -14,9 +14,20 @@ My first design idea was inspired by old-school 8-bit color command-line termina
 
 <img width="826" height="509" alt="image" src="https://github.com/user-attachments/assets/90edd5d1-9889-4d85-b618-7b1bddd83b4e" />  
 
+I really liked how this simple watch face turned. It was clean, colorful, and easy to read. However, it also lacked functionality beyond simply showing the time. To make it more useful, I decided to transform the eight colorful squares into a dynamic bar-chart display, where each color represents a different type of data. I switched out the "Hellow World" text for the day and date.
 
+<img width="387" height="611" alt="image" src="https://github.com/user-attachments/assets/405cda87-c79e-4cff-bf01-0aaf6680c81b" /> <img width="388" height="608" alt="image" src="https://github.com/user-attachments/assets/bc0e4d9d-50ce-4bdd-bfeb-72522419f4b4" /> 
 
-
+| **Colour**  |  **Data**                 |
+|:--------|:------------------------------|
+| `BLACK`   | -                           |
+| `RED`     | heart rate                  |
+| `GREEN`   | steps (% of my daily goal)  |
+| `YELLOW`  | stress level                |
+| `DK_BLUE` | bluetooth connection status |
+| `PINK`    | battery %                   |
+| `BLUE`    | body battery                |
+| `WHITE`   | notifications               |
 
 ## Useful Links
 - Basic tutrorial: https://medium.com/@ericbt/design-your-own-garmin-watch-face-21d004d38f99
