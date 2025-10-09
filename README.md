@@ -31,5 +31,6 @@ I really liked how this simple watch face turned. It was clean, colorful, and ea
 
 ## Useful Links
 - Basic tutrorial: https://medium.com/@ericbt/design-your-own-garmin-watch-face-21d004d38f99
+- Codes Samples: https://starttorun.info/connect-iq-apps-with-source-code/
 - SDK download: https://developer.garmin.com/connect-iq/sdk/
 - Graphics docs: https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html
